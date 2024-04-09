@@ -4,87 +4,273 @@ title: Home
 ---
 
 <style>
-  .hero {
-    background: url("/assets/images/slideshow-01.jpg") center fixed no-repeat;
-    background-size: auto 100vh;
+  #hero-container {
+    /* margin-top: 128px; */
     height: 100vh;
+  }
+  #hero {
+    background: url("/assets/images/slideshow-01.jpg") center fixed no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-origin: top left;
+  }
+  #hero-target {
+    background: transparent;
   }
   a {
     color: grey;
   }
+  #exp {
+    background: url("/assets/images/slideshow-02.jpg") center no-repeat;
+    background-size: 100% auto;
+  }
+  #landing {
+    display: none;
+  }
 </style>
-<div class="container-fluid hero">
-  <!-- <h1>{{ "Hello World!" }}</h1> -->
-</div>
-<div id="projects" class="container text-center mt-5">
-  <h1>
-    Our Projects
-  </h1>
-  <p></p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore
-    tempora dolorem, saepe corrupti cupiditate quam iusto similique totam
-    ratione doloribus eligendi quasi unde, deserunt debitis incidunt accusantium
-    perspiciatis! Voluptate.
-  </p>
-</div>
-<div id="carouselExampleIndicators" class="carousel slide shadow-lg my-5 mx-5">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<div class="container-fluid p-0">
+  <div id="hero-container" class="bg-dark">
+    <div id="hero" class="shadow-lg"></div>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/assets/images/slideshow-02.jpg" class="d-block w-100" alt="...">
-      <div class="container bg-white text-center py-2">
-        <img src="/assets/images/lavish-estates-logo-light.png" class="my-4" height="80px">
-        <p><a href="">See details</a></p>
+  <div id="landing" class="container-fluid py-5 m-0 bg-dark text-white">
+    <div class="container">
+      <div class="row my-5">
+        <div class="col px-5">
+          <h1>Landing</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            labore tempora dolorem, saepe corrupti cupiditate quam iusto
+            similique totam ratione doloribus eligendi quasi unde, deserunt
+            debitis incidunt accusantium perspiciatis! Voluptate.
+          </p>
+        </div>
+        <div id="hero-target" class="col p-0"></div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/images/slideshow-03.jpg" class="d-block w-100" alt="...">
-      <div class="container bg-white text-center py-2">
-        <img src="/assets/images/lavish-estates-logo-light.png" class="my-4"  height="80px">
-        <p><a href="">See details</a></p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/images/slideshow-04.jpg" class="d-block w-100" alt="...">
-      <div class="container bg-white text-center py-2">
-        <img src="/assets/images/lavish-estates-logo-light.png" class="my-4"  height="80px">
-        <p><a href="">See details</a></p>
+      <div class="row my-5">
+        <div id="exp" class="col p-0 bg-white"></div>
+        <div class="col px-5">
+          <h1>Experience</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            labore tempora dolorem, saepe corrupti cupiditate quam iusto
+            similique totam ratione doloribus eligendi quasi unde, deserunt
+            debitis incidunt accusantium perspiciatis! Voluptate.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  <div id="projects" class="container text-center mt-5">
+    <h1>Our Projects</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore
+      tempora dolorem, saepe corrupti cupiditate quam iusto similique totam
+      ratione doloribus eligendi quasi unde, deserunt debitis incidunt
+      accusantium perspiciatis! Voluptate.
+    </p>
+  </div>
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide shadow-lg my-5 mx-5"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="/assets/images/slideshow-02.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="container bg-white text-center py-2">
+          <img
+            src="/assets/images/lavish-estates-logo-light.png"
+            class="my-4"
+            height="80px"
+          />
+          <p><a href="">See details</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/assets/images/slideshow-03.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="container bg-white text-center py-2">
+          <img
+            src="/assets/images/lavish-estates-logo-light.png"
+            class="my-4"
+            height="80px"
+          />
+          <p><a href="">See details</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/assets/images/slideshow-04.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="container bg-white text-center py-2">
+          <img
+            src="/assets/images/lavish-estates-logo-light.png"
+            class="my-4"
+            height="80px"
+          />
+          <p><a href="">See details</a></p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div id="about" class="container text-center mt-5">
+    <h1>About Elite Manor</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore
+      tempora dolorem, saepe corrupti cupiditate quam iusto similique totam
+      ratione doloribus eligendi quasi unde, deserunt debitis incidunt
+      accusantium perspiciatis! Voluptate.
+    </p>
+  </div>
+  <div id="about" class="container text-center mt-5 mb-5">
+    <h1>Key Features</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore
+      tempora dolorem, saepe corrupti cupiditate quam iusto similique totam
+      ratione doloribus eligendi quasi unde, deserunt debitis incidunt
+      accusantium perspiciatis! Voluptate.
+    </p>
+  </div>
+  <div class="container-fluid shadow-lg p-0">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15497.401903904945!2d100.5575228!3d13.8179812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x817f06348db4e36a!2zUFRUIEhlYWQgT2ZmaWNlIOC4quC4s-C4meC4seC4geC4h-C4suC4meC5g-C4q-C4jeC5iCDguJvguJXguJcu!5e0!3m2!1sth!2sth!4v1611764262967!5m2!1sth!2sth"
+      width="100%"
+      height="500"
+      frameborder="0"
+      allowfullscreen="allowfullscreen"
+      class="shadow-straight"
+      style="border: 0"
+      data-v-8326e6e6=""
+    ></iframe>
+  </div>
+  <script>
+    $(window).scroll(function () {
+      $("#landing").fadeIn(500);
+      var currentScroll = $(window).scrollTop();
+      var container = $("#hero-container")[0];
+      var originalX = container.offsetLeft;
+      var originalY = container.offsetTop;
+      var originalWidth = container.offsetWidth;
+      var originalHeight = container.offsetHeight;
+      var target = $("#hero-target")[0];
+      var targetX = target.offsetLeft;
+      var targetY = target.offsetTop; // TODO: Fix this weird magic number offset
+      var targetWidth = target.offsetWidth;
+      var targetHeight = target.offsetHeight;
+      var stage = Math.min(1.75 * Math.min(currentScroll / targetY, 1), 1);
+      console.log("Container", container);
+      console.log("Target", target);
+      console.log(
+        currentScroll,
+        originalX,
+        originalY,
+        originalWidth,
+        originalHeight,
+        targetX,
+        targetY,
+        targetWidth,
+        targetHeight
+      );
+      console.log(stage);
+
+      var targetScaleX = targetWidth / originalWidth;
+      var targetScaleY = targetHeight / originalHeight;
+      var scaleX = 1 - (1 - targetScaleX) * stage;
+      var scaleY = 1 - (1 - targetScaleY) * stage;
+      var scale =
+        //""
+        `scale(${scaleX}, ${scaleY})`;
+      var translate = `translate(${stage * targetX}px, ${stage * targetY}px)`;
+      //`translate(${937}px, ${919}px)`;
+      // console.log(targetScaleX, targetScaleY);
+      // console.log(scaleX, scaleY);
+      console.log(translate);
+      console.log(scale);
+
+      var hero = $("#hero");
+      hero.width(originalWidth - (originalWidth - targetWidth) * stage);
+      hero.height(originalHeight - (originalHeight - targetHeight) * stage);
+      //hero(stage * targetX);
+      //hero.offsetTop(stage * targetY);
+      hero.css({
+        transform: `${translate}`,
+        // left: stage * targetX,
+        // top: stage * targetY,
+        // + " scale(" +          (100 - currentScroll / 100) / 100 +          ")",
+      });
+
+      //$("#landing").css({ visibility: "visible" });
+    });
+  </script>
+
+  <!-- <script>
+    $(window).scroll(function () {
+      console.log($(window).scrollTop());
+      var topDivHeight = $("#hero-container").height();
+      var viewPortSize = $(window).height();
+  
+      var triggerAt = 150;
+      var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
+
+      console.log('fade', topDivHeight, viewPortSize, triggerAt, triggerHeight);
+  
+      if ($(window).scrollTop() >= triggerHeight) {
+        var div = $('.fadethisdiv')
+          div.css('visibility', 'visible')
+          //div.hide();
+          div.fadeIn();
+          // $(this).off('scroll');
+      }
+  });
+  </script> -->
 </div>
-<div id="about" class="container text-center mt-5">
-  <h1>
-    About Elite Manor
-  </h1>
-  <p></p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore
-    tempora dolorem, saepe corrupti cupiditate quam iusto similique totam
-    ratione doloribus eligendi quasi unde, deserunt debitis incidunt accusantium
-    perspiciatis! Voluptate.
-  </p>
-</div>
-<div id="about" class="container text-center mt-5 mb-5">
-  <h1>
-    Key Features
-  </h1>
-  <p></p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore
-    tempora dolorem, saepe corrupti cupiditate quam iusto similique totam
-    ratione doloribus eligendi quasi unde, deserunt debitis incidunt accusantium
-    perspiciatis! Voluptate.
-  </p>
-</div>
-<div class="container-fluid shadow-lg p-0"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15497.401903904945!2d100.5575228!3d13.8179812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x817f06348db4e36a!2zUFRUIEhlYWQgT2ZmaWNlIOC4quC4s-C4meC4seC4geC4h-C4suC4meC5g-C4q-C4jeC5iCDguJvguJXguJcu!5e0!3m2!1sth!2sth!4v1611764262967!5m2!1sth!2sth" width="100%" height="500" frameborder="0" allowfullscreen="allowfullscreen" class="shadow-straight" style="border: 0" data-v-8326e6e6=""></iframe></div>

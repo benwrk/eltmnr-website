@@ -1,13 +1,22 @@
 <style>
-  .container, .navbar {
-    background-color: transparent;
+  .navbar {
+    background-color: white;
+    min-height: 128px;
+    
   }
   .navbar-toggler {
     border: none;
     border-radius: 0;
   }
+  @supports(backdrop-filter: saturate(250%) blur(6px)) or (-webkit-backdrop-filter:saturate(250%) blur(6px)) {
+    .navbar {
+        background:rgba(255,255,255,.75)!important;
+        -webkit-backdrop-filter: saturate(250%) blur(6px);
+        backdrop-filter: saturate(250%) blur(6px)
+    }
+}
 </style>
-<nav class="navbar">
+<nav class="navbar fixed-top">
   <div class="container pt-3 pb-3">
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
     <a class="navbar-brand" href="/">
