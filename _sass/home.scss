@@ -1,0 +1,26 @@
+#hero-container {
+  /* margin-top: 128px; */
+  height: 100vh;
+  max-height: 70vw;
+  width: 100%;
+}
+
+#hero {
+  background: url("/assets/images/slideshow-01.jpg") center fixed no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100vh;
+  max-height: 70vw;
+  width: 100%;
+  transform-origin: top left;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#hero-target {
+  background: transparent;
+}
+
+#exp {
+  background: url("/assets/images/slideshow-02.jpg") center no-repeat;
+  background-size: 100% cover;
+}

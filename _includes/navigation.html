@@ -1,27 +1,13 @@
-<style>
-  .navbar-toggler {
-    border: none;
-    /* border-radius: 0; */
-  }
-  .navbar {
-    background: #111111bf;
-  }
-  @supports (backdrop-filter: saturate(300%) blur(10px)) or
-    (-webkit-backdrop-filter: saturate(300%) blur(10px)) {
-    .navbar {
-      backdrop-filter: saturate(300%) blur(10px);
-      -webkit-backdrop-filter: saturate(300%) blur(10px);
-    }
-  }
-  a {
-    color: #ffffffee !important;
-  }
-</style>
 <nav class="navbar navbar-dark fixed-top">
   <div class="container pt-3 pb-3">
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
     <a class="navbar-brand" href="/">
-      <img src="assets/images/logo.png" height="60" />
+      <img
+        loading="lazy"
+        src="{{ 'assets/images/logo.png' | relative_url}}"
+        alt="Elite Manor Logo"
+        height="60"
+      />
     </a>
     <button
       class="navbar-toggler px-0"
@@ -36,39 +22,29 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav nav-underline align-items-end m-2">
-        <!-- <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        {% assign pages = site.pages | reverse %}
+        {% for page_ in pages %}
+        <li
+          class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}"
+        >
+          <a class="nav-link" href="{{ page_.url }}">
+            {{ page_.title }}{% if page.url == page_.url %}
+            <span class="sr-only">(current)</span>{% endif %}
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li> -->
-        {% for item in site.data.navigation %}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ item.link }}" {% if page.url=item.link %}class="current" {% endif %}>
-            {{ item.name }}
+        {% endfor %}
+        {% assign pages = site.projects | reverse %}
+        {% for page_ in pages %}
+        <li
+          class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}"
+        >
+          <a class="nav-link" href="{{ page_.url }}">
+            {{ page_.title }}{% if page.url == page_.url %}
+            <span class="sr-only">(current)</span>{% endif %}
           </a>
         </li>
         {% endfor %}
       </ul>
-      <!-- <form class="d-flex" role="search">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> -->
     </div>
   </div>
-  <!-- <div class="container">
-  </div> -->
 </nav>
-<!-- <nav>
-    {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a>
-    {% endfor %}
-</nav> -->

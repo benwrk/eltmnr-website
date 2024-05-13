@@ -1,72 +1,47 @@
 ---
-layout: default
+permalink: /
 title: Home
+navbar_display: false
 ---
 
-<style>
-  #hero-container {
-    /* margin-top: 128px; */
-    height: 100vh;
-    max-height: 100vh;
-    width: 100%;
-  }
-  #hero {
-    background: url("/assets/images/slideshow-01.jpg") center fixed no-repeat;
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transform-origin: top left;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-  }
-  #hero-target {
-    background: transparent;
-    height: 900px;
-  }
-  #exp {
-    background: url("/assets/images/slideshow-02.jpg") center no-repeat;
-    background-size: 100% cover;
-  }
-</style>
 <div class="container-fluid p-0">
   <div id="hero-container" class="bg-dark">
     <div id="hero" class="shadow-lg"></div>
   </div>
-  <section id="landing" class="container-fluid py-5 m-0 bg-dark text-white">
-    <div class="container-fluid px-0">
-      <div class="row my-5 px-5">
-        <div id="hero-target" class="col p-0 mx-5"></div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <em>
-              <h1>Innovative Living, Classic Luxury</h1>
-            </em>
-          </div>
+  <div id="landing" class="container-fluid py-5 m-0 bg-dark text-white">
+    <div class="container px-0">
+      <div class="row my-5">
+        <div id="hero-target" class="col p-0 me-5"></div>
+        <div class="col">
+          <h1>
+            <em
+              >“To redefine innovative living through luxury, comfort, and
+              pristine quality residences”</em
+            >
+          </h1>
+          <p>
+            Elite Manor is a real estate development firm that tailors to
+            international clients who seek luxury and high-end housing in
+            Thailand. Headquartered in Phuket, Thailand and focused on a target
+            market of families, foreigners, and investors. We pride ourselves in
+            our high quality builds and modern smart-home designs.
+          </p>
         </div>
-        <div class="row my-5">
-          <div class="col">
-            <h2>
-              <em
-                >“To redefine innovative living through luxury, comfort, and
-                pristine quality residences”
-              </em>
-            </h2>
-            <p>
-              Elite Manor is a real estate development firm that tailors to
-              international clients who seek luxury and high-end housing in
-              Thailand. Headquartered in Phuket, Thailand and focused on a
-              target market of families, foreigners, and investors. We pride
-              ourselves in our high quality builds and modern smart-home
-              designs.
-            </p>
-          </div>
-          <div id="exp" class="col p-0 me-5"></div>
+      </div>
+      <div class="row my-5">
+        <div id="exp" class="col p-0 me-5"></div>
+        <div class="col">
+          <h1>Experience</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            labore tempora dolorem, saepe corrupti cupiditate quam iusto
+            similique totam ratione doloribus eligendi quasi unde, deserunt
+            debitis incidunt accusantium perspiciatis! Voluptate.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <div id="projects" class="container text-center mt-5">
     <h1>Our Projects</h1>
     <p>
@@ -211,7 +186,7 @@ title: Home
       var targetY = target.offsetTop;
       var targetWidth = target.offsetWidth;
       var targetHeight = target.offsetHeight;
-      var stageMultiplier = 1.25;
+      var stageMultiplier = 1.2;
       var stage = Math.min(
         stageMultiplier * Math.min(currentScroll / targetY, 1),
         1

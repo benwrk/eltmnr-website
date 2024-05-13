@@ -1,0 +1,58 @@
+title: "Elite Manor"
+url: "https://eltmnr.com"
+locale: en-US
+timezone: Asia/Bangkok
+permalink: /blog/:categories/:year/:month/:day/:title/
+# facebook_page_id:
+# google_tag_id:
+seo_keywords:
+  - elite manor
+
+collections:
+  pages:
+    output: true
+    sort_by: order
+    permalink: /:name/
+  projects:
+    output: true
+    sort_by: order
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path:
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path:
+      type: pages
+    values:
+      layout: default
+      navbar_display: true
+  - scope:
+      path:
+      type: projects
+    values:
+      layout: projects
+      navbar_display: true
+
+sass:
+  style: compressed
+
+strict_front_matter: true
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: plaintext
+
+exclude:
+  - ".github"
+  - ".gitignore"
+  - ".jekyll-cache"
+  - ".vscode"
+  - Gemfile
+  - Gemfile.lock
+  - Gemfile.development
+  - Gemfile.development.lock
