@@ -1,8 +1,10 @@
 # - name: Home
 #   link: /
 - name: Projects
-  link: /#projects
-- name: About
-  link: /#about
+  link: /projects.html
+# - name: About
+#   link: /#about
 - name: Contact us
   link: /contact.html
+- name: Blog
+  link: /blog.html

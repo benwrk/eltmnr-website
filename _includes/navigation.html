@@ -1,29 +1,30 @@
 <style>
-  .navbar {
-    background-color: white;
-    min-height: 128px;
-    
-  }
   .navbar-toggler {
     border: none;
-    border-radius: 0;
+    /* border-radius: 0; */
   }
-  @supports(backdrop-filter: saturate(250%) blur(6px)) or (-webkit-backdrop-filter:saturate(250%) blur(6px)) {
+  .navbar {
+    background: #111111bf;
+  }
+  @supports (backdrop-filter: saturate(300%) blur(10px)) or
+    (-webkit-backdrop-filter: saturate(300%) blur(10px)) {
     .navbar {
-        background:rgba(255,255,255,.75)!important;
-        -webkit-backdrop-filter: saturate(250%) blur(6px);
-        backdrop-filter: saturate(250%) blur(6px)
+      backdrop-filter: saturate(300%) blur(10px);
+      -webkit-backdrop-filter: saturate(300%) blur(10px);
     }
-}
+  }
+  a {
+    color: #ffffffee !important;
+  }
 </style>
-<nav class="navbar fixed-top">
+<nav class="navbar navbar-dark fixed-top">
   <div class="container pt-3 pb-3">
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
     <a class="navbar-brand" href="/">
-      <img src="assets/images/logo-light.png" height="60" />
+      <img src="assets/images/logo.png" height="60" />
     </a>
     <button
-      class="navbar-toggler"
+      class="navbar-toggler px-0"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarToggler"
@@ -34,7 +35,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-4">
+      <ul class="navbar-nav nav-underline align-items-end m-2">
         <!-- <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -46,7 +47,7 @@
         </li> -->
         {% for item in site.data.navigation %}
         <li class="nav-item">
-          <a class="nav-link" href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+          <a class="nav-link" href="{{ item.link }}" {% if page.url=item.link %}class="current" {% endif %}>
             {{ item.name }}
           </a>
         </li>

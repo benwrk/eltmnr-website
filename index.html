@@ -7,6 +7,8 @@ title: Home
   #hero-container {
     /* margin-top: 128px; */
     height: 100vh;
+    max-height: 100vh;
+    width: 100%;
   }
   #hero {
     background: url("/assets/images/slideshow-01.jpg") center fixed no-repeat;
@@ -15,53 +17,56 @@ title: Home
     height: 100%;
     width: 100%;
     transform-origin: top left;
+    transform: matrix(1, 0, 0, 1, 0, 0);
   }
   #hero-target {
     background: transparent;
-  }
-  a {
-    color: grey;
+    height: 900px;
   }
   #exp {
     background: url("/assets/images/slideshow-02.jpg") center no-repeat;
-    background-size: 100% auto;
-  }
-  #landing {
-    display: none;
+    background-size: 100% cover;
   }
 </style>
 <div class="container-fluid p-0">
   <div id="hero-container" class="bg-dark">
     <div id="hero" class="shadow-lg"></div>
   </div>
-  <div id="landing" class="container-fluid py-5 m-0 bg-dark text-white">
-    <div class="container">
-      <div class="row my-5">
-        <div class="col px-5">
-          <h1>Landing</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            labore tempora dolorem, saepe corrupti cupiditate quam iusto
-            similique totam ratione doloribus eligendi quasi unde, deserunt
-            debitis incidunt accusantium perspiciatis! Voluptate.
-          </p>
-        </div>
-        <div id="hero-target" class="col p-0"></div>
+  <section id="landing" class="container-fluid py-5 m-0 bg-dark text-white">
+    <div class="container-fluid px-0">
+      <div class="row my-5 px-5">
+        <div id="hero-target" class="col p-0 mx-5"></div>
       </div>
-      <div class="row my-5">
-        <div id="exp" class="col p-0 bg-white"></div>
-        <div class="col px-5">
-          <h1>Experience</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            labore tempora dolorem, saepe corrupti cupiditate quam iusto
-            similique totam ratione doloribus eligendi quasi unde, deserunt
-            debitis incidunt accusantium perspiciatis! Voluptate.
-          </p>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <em>
+              <h1>Innovative Living, Classic Luxury</h1>
+            </em>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col">
+            <h2>
+              <em
+                >“To redefine innovative living through luxury, comfort, and
+                pristine quality residences”
+              </em>
+            </h2>
+            <p>
+              Elite Manor is a real estate development firm that tailors to
+              international clients who seek luxury and high-end housing in
+              Thailand. Headquartered in Phuket, Thailand and focused on a
+              target market of families, foreigners, and investors. We pride
+              ourselves in our high quality builds and modern smart-home
+              designs.
+            </p>
+          </div>
+          <div id="exp" class="col p-0 me-5"></div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <div id="projects" class="container text-center mt-5">
     <h1>Our Projects</h1>
     <p>
@@ -194,24 +199,32 @@ title: Home
     ></iframe>
   </div>
   <script>
-    $(window).scroll(function () {
-      $("#landing").fadeIn(500);
+    var animateHero = function () {
       var currentScroll = $(window).scrollTop();
       var container = $("#hero-container")[0];
+      var target = $("#hero-target")[0];
       var originalX = container.offsetLeft;
       var originalY = container.offsetTop;
       var originalWidth = container.offsetWidth;
       var originalHeight = container.offsetHeight;
-      var target = $("#hero-target")[0];
       var targetX = target.offsetLeft;
-      var targetY = target.offsetTop; // TODO: Fix this weird magic number offset
+      var targetY = target.offsetTop;
       var targetWidth = target.offsetWidth;
       var targetHeight = target.offsetHeight;
-      var stage = Math.min(1.75 * Math.min(currentScroll / targetY, 1), 1);
-      console.log("Container", container);
-      console.log("Target", target);
+      var stageMultiplier = 1.25;
+      var stage = Math.min(
+        stageMultiplier * Math.min(currentScroll / targetY, 1),
+        1
+      );
+
+      if (currentScroll > targetY) {
+        return;
+      }
+
       console.log(
+        "[animateHero]",
         currentScroll,
+        parseInt(stage * 100),
         originalX,
         originalY,
         originalWidth,
@@ -221,36 +234,60 @@ title: Home
         targetWidth,
         targetHeight
       );
-      console.log(stage);
 
       var targetScaleX = targetWidth / originalWidth;
       var targetScaleY = targetHeight / originalHeight;
       var scaleX = 1 - (1 - targetScaleX) * stage;
       var scaleY = 1 - (1 - targetScaleY) * stage;
-      var scale =
-        //""
-        `scale(${scaleX}, ${scaleY})`;
+      var scale = `scale(${scaleX}, ${scaleY})`;
       var translate = `translate(${stage * targetX}px, ${stage * targetY}px)`;
-      //`translate(${937}px, ${919}px)`;
-      // console.log(targetScaleX, targetScaleY);
-      // console.log(scaleX, scaleY);
-      console.log(translate);
-      console.log(scale);
 
       var hero = $("#hero");
       hero.width(originalWidth - (originalWidth - targetWidth) * stage);
       hero.height(originalHeight - (originalHeight - targetHeight) * stage);
-      //hero(stage * targetX);
-      //hero.offsetTop(stage * targetY);
       hero.css({
         transform: `${translate}`,
-        // left: stage * targetX,
-        // top: stage * targetY,
-        // + " scale(" +          (100 - currentScroll / 100) / 100 +          ")",
       });
+      console.log(translate);
+    };
 
-      //$("#landing").css({ visibility: "visible" });
-    });
+    var lastScrollTop = 0;
+    var disableScroll = false;
+    var heroScroll = function () {
+      if (disableScroll) {
+        return;
+      }
+
+      var currentScroll = $(window).scrollTop();
+      var scrollDuration = 50;
+      var debounceWaitDuration = 10 * scrollDuration;
+      var delay = 50;
+      var landingOffset = $("#landing").offset().top;
+      if (currentScroll > 0 && currentScroll < landingOffset) {
+        disableScroll = true;
+        if (currentScroll >= lastScrollTop) {
+          console.log("scd");
+          setTimeout(function () {
+            $("html,body").animate(
+              { scrollTop: $("#landing").offset().top },
+              scrollDuration
+            );
+          }, delay);
+        } else {
+          console.log("scu");
+          $("html,body").animate({ scrollTop: 0 }, scrollDuration);
+        }
+        setTimeout(function () {
+          disableScroll = false;
+          lastScrollTop = $(window).scrollTop();
+        }, debounceWaitDuration);
+      }
+    };
+
+    //$(document).ready(animateHero);
+    $(window).scroll(animateHero);
+    // $(window).scroll(heroScroll);
+    $(window).resize(animateHero);
   </script>
 
   <!-- <script>
