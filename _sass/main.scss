@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
+// $--bs-dark: #111111;
+// $--bs-dark-rgb: rgb(17, 17, 17);
+
 body {
   font-family: "Montserrat";
+  // background-color: #111111;
 }
 
-.current {
-  color: green;
+html {
+  background-color: #111111;
 }
+
+// body * {
+//   background-color: #fff;
+// }

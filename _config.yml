@@ -17,6 +17,10 @@ collections:
     output: true
     sort_by: order
     permalink: /:collection/:name
+  blogs:
+    output: true
+    sort_by: date
+    permalink: /:collection/:year:month:day/:name
 
 defaults:
   - scope:
@@ -36,6 +40,12 @@ defaults:
     values:
       layout: projects
       navbar_display: true
+  - scope:
+      path:
+      type: blogs
+    values:
+      layout: blogs
+      hidden: false
 
 sass:
   style: compressed

@@ -2,13 +2,14 @@
 permalink: /
 title: Home
 navbar_display: false
+order: 0
 ---
 
-<div class="container-fluid p-0">
-  <div id="hero-container" class="bg-dark">
-    <div id="hero" class="shadow-lg"></div>
+<div class="container-fluid px-0">
+  <div id="hero-container" class="rounded">
+    <div id="hero" class="rounded"></div>
   </div>
-  <div id="landing" class="container-fluid py-5 m-0 bg-dark text-white">
+  <section id="landing" class="container-fluid py-5 m-0 text-white">
     <div class="container px-0">
       <div class="row my-5">
         <div id="hero-target" class="col p-0 me-5"></div>
@@ -19,7 +20,7 @@ navbar_display: false
               pristine quality residences”</em
             >
           </h1>
-          <p>
+          <p class="lead">
             Elite Manor is a real estate development firm that tailors to
             international clients who seek luxury and high-end housing in
             Thailand. Headquartered in Phuket, Thailand and focused on a target
@@ -29,29 +30,80 @@ navbar_display: false
         </div>
       </div>
       <div class="row my-5">
-        <div id="exp" class="col p-0 me-5"></div>
+        <div id="exp" class="col rounded p-0 me-5"></div>
         <div class="col">
           <h1>Experience</h1>
-          <p>
+          <p class="lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             labore tempora dolorem, saepe corrupti cupiditate quam iusto
             similique totam ratione doloribus eligendi quasi unde, deserunt
-            debitis incidunt accusantium perspiciatis! Voluptate.
+            debitis incidunt accusantium perspiciatis! Voluptate. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Culpa fugit quo,
+            maxime voluptates aperiam enim deserunt cumque. Vitae culpa aperiam
+            eius, sit minima explicabo! Consequatur et voluptatum ea excepturi
+            magnam.
           </p>
         </div>
       </div>
     </div>
-  </div>
-  <div id="projects" class="container text-center mt-5">
-    <h1>Our Projects</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore
-      tempora dolorem, saepe corrupti cupiditate quam iusto similique totam
-      ratione doloribus eligendi quasi unde, deserunt debitis incidunt
-      accusantium perspiciatis! Voluptate.
-    </p>
-  </div>
-  <div
+  </section>
+  <section id="projects" class="container text-center mt-5">
+    <h1>Projects</h1>
+    <a
+      class="link-dark link-underline-opacity-0"
+      href="/projects/lavish-estates"
+    >
+      <div class="row mt-5">
+        <div class="col d-flex">
+          <div class="project-card m-4 d-flex flex-column shadow-lg">
+            <div>
+              <img
+                class="project-card-image"
+                src="{{ '/assets/images/slideshow-01.jpg' | relative_url }}"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="project-card-description p-4">
+              <img
+                class="mb-4"
+                src="/assets/images/lavish-estates-logo-light.png"
+                height="80px"
+              />
+              <p class="lead">
+                The harmony of innovative living through luxury, comfort, and
+                pristine quality residences in Phuket
+              </p>
+            </div>
+            <a class="btn btn-dark rounded-0" href="/projects/lavish-estates">Explore</a>
+          </div>
+          <div class="project-card m-4 d-flex flex-column shadow-lg">
+            <div>
+              <img
+                class="project-card-image"
+                src="{{ '/assets/images/slideshow-01.jpg' | relative_url }}"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="project-card-description p-4">
+              <img
+                class="mb-4"
+                src="/assets/images/lavish-estates-logo-light.png"
+                height="80px"
+              />
+              <p class="lead">
+                The harmony of innovative living through luxury, comfort, and
+                pristine quality residences in Phuket
+              </p>
+            </div>
+            <a class="btn btn-dark rounded-0" href="/projects/lavish-estates">Explore</a>
+          </div>
+        </div>
+      </div>
+    </a>
+  </section>
+  <!-- <div
     id="carouselExampleIndicators"
     class="carousel slide shadow-lg my-5 mx-5"
   >
@@ -142,17 +194,28 @@ navbar_display: false
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </div> -->
   <div id="about" class="container text-center mt-5">
     <h1>About Elite Manor</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore
-      tempora dolorem, saepe corrupti cupiditate quam iusto similique totam
-      ratione doloribus eligendi quasi unde, deserunt debitis incidunt
-      accusantium perspiciatis! Voluptate.
+      Elite Manor is a real estate development firm that tailors to
+      international clients who seek luxury and high-end housing in Thailand.
+      Headquartered in Phuket, Thailand and focused on a target market of
+      families, foreigners, and investors. We pride ourselves in our high
+      quality builds and modern smart-home designs.
+      <br />
+      <br />
+      <img
+        src="{{ '/assets/images/award-elite-manor.png' | relative_url }}"
+        alt=""
+        width="100px"
+      />
+      <br />
+      <h4>BEST INNOVATIVE DEVELOPER SOUTH EAST ASIA 2023</h4>
     </p>
+    <a class="btn btn-dark rounded-0" href="/about">Read more</a>
   </div>
-  <div id="about" class="container text-center mt-5 mb-5">
+  <!-- <div id="about" class="container text-center mt-5 mb-5">
     <h1>Key Features</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore
@@ -160,8 +223,8 @@ navbar_display: false
       ratione doloribus eligendi quasi unde, deserunt debitis incidunt
       accusantium perspiciatis! Voluptate.
     </p>
-  </div>
-  <div class="container-fluid shadow-lg p-0">
+  </div> -->
+  <div class="container-fluid shadow-lg p-0 mt-5">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15497.401903904945!2d100.5575228!3d13.8179812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x817f06348db4e36a!2zUFRUIEhlYWQgT2ZmaWNlIOC4quC4s-C4meC4seC4geC4h-C4suC4meC5g-C4q-C4jeC5iCDguJvguJXguJcu!5e0!3m2!1sth!2sth!4v1611764262967!5m2!1sth!2sth"
       width="100%"
@@ -173,116 +236,96 @@ navbar_display: false
       data-v-8326e6e6=""
     ></iframe>
   </div>
-  <script>
-    var animateHero = function () {
-      var currentScroll = $(window).scrollTop();
-      var container = $("#hero-container")[0];
-      var target = $("#hero-target")[0];
-      var originalX = container.offsetLeft;
-      var originalY = container.offsetTop;
-      var originalWidth = container.offsetWidth;
-      var originalHeight = container.offsetHeight;
-      var targetX = target.offsetLeft;
-      var targetY = target.offsetTop;
-      var targetWidth = target.offsetWidth;
-      var targetHeight = target.offsetHeight;
-      var stageMultiplier = 1.2;
-      var stage = Math.min(
-        stageMultiplier * Math.min(currentScroll / targetY, 1),
-        1
-      );
-
-      if (currentScroll > targetY) {
-        return;
-      }
-
-      console.log(
-        "[animateHero]",
-        currentScroll,
-        parseInt(stage * 100),
-        originalX,
-        originalY,
-        originalWidth,
-        originalHeight,
-        targetX,
-        targetY,
-        targetWidth,
-        targetHeight
-      );
-
-      var targetScaleX = targetWidth / originalWidth;
-      var targetScaleY = targetHeight / originalHeight;
-      var scaleX = 1 - (1 - targetScaleX) * stage;
-      var scaleY = 1 - (1 - targetScaleY) * stage;
-      var scale = `scale(${scaleX}, ${scaleY})`;
-      var translate = `translate(${stage * targetX}px, ${stage * targetY}px)`;
-
-      var hero = $("#hero");
-      hero.width(originalWidth - (originalWidth - targetWidth) * stage);
-      hero.height(originalHeight - (originalHeight - targetHeight) * stage);
-      hero.css({
-        transform: `${translate}`,
-      });
-      console.log(translate);
-    };
-
-    var lastScrollTop = 0;
-    var disableScroll = false;
-    var heroScroll = function () {
-      if (disableScroll) {
-        return;
-      }
-
-      var currentScroll = $(window).scrollTop();
-      var scrollDuration = 50;
-      var debounceWaitDuration = 10 * scrollDuration;
-      var delay = 50;
-      var landingOffset = $("#landing").offset().top;
-      if (currentScroll > 0 && currentScroll < landingOffset) {
-        disableScroll = true;
-        if (currentScroll >= lastScrollTop) {
-          console.log("scd");
-          setTimeout(function () {
-            $("html,body").animate(
-              { scrollTop: $("#landing").offset().top },
-              scrollDuration
-            );
-          }, delay);
-        } else {
-          console.log("scu");
-          $("html,body").animate({ scrollTop: 0 }, scrollDuration);
-        }
-        setTimeout(function () {
-          disableScroll = false;
-          lastScrollTop = $(window).scrollTop();
-        }, debounceWaitDuration);
-      }
-    };
-
-    //$(document).ready(animateHero);
-    $(window).scroll(animateHero);
-    // $(window).scroll(heroScroll);
-    $(window).resize(animateHero);
-  </script>
-
-  <!-- <script>
-    $(window).scroll(function () {
-      console.log($(window).scrollTop());
-      var topDivHeight = $("#hero-container").height();
-      var viewPortSize = $(window).height();
-  
-      var triggerAt = 150;
-      var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
-
-      console.log('fade', topDivHeight, viewPortSize, triggerAt, triggerHeight);
-  
-      if ($(window).scrollTop() >= triggerHeight) {
-        var div = $('.fadethisdiv')
-          div.css('visibility', 'visible')
-          //div.hide();
-          div.fadeIn();
-          // $(this).off('scroll');
-      }
-  });
-  </script> -->
 </div>
+
+<script type="text/javascript">
+  var animateHero = function () {
+    var currentScroll = $(window).scrollTop();
+    var container = $("#hero-container")[0];
+    var target = $("#hero-target")[0];
+    var originalX = container.offsetLeft;
+    var originalY = container.offsetTop;
+    var originalWidth = container.offsetWidth;
+    var originalHeight = container.offsetHeight;
+    var targetX = target.offsetLeft - originalX;
+    var targetY = target.offsetTop - originalY;
+    var targetWidth = target.offsetWidth;
+    var targetHeight = target.offsetHeight;
+    var stageMultiplier = 1.2;
+    var stage = Math.min(
+      stageMultiplier * Math.min(currentScroll / targetY, 1),
+      1
+    );
+
+    if (currentScroll > targetY) {
+      // return;
+    }
+
+    console.log(
+      "[animateHero]",
+      currentScroll,
+      parseInt(stage * 100),
+      originalX,
+      originalY,
+      originalWidth,
+      originalHeight,
+      targetX,
+      targetY,
+      targetWidth,
+      targetHeight
+    );
+
+    var targetScaleX = targetWidth / originalWidth;
+    var targetScaleY = targetHeight / originalHeight;
+    var scaleX = 1 - (1 - targetScaleX) * stage;
+    var scaleY = 1 - (1 - targetScaleY) * stage;
+    var scale = `scale(${scaleX}, ${scaleY})`;
+    var translate = `translate(${stage * targetX}px, ${stage * targetY}px)`;
+
+    var hero = $("#hero");
+    hero.width(originalWidth - (originalWidth - targetWidth) * stage);
+    hero.height(originalHeight - (originalHeight - targetHeight) * stage);
+    hero.css({
+      transform: `${translate}`,
+    });
+    console.log(translate);
+  };
+
+  var lastScrollTop = 0;
+  var disableScroll = false;
+  var heroScroll = function () {
+    if (disableScroll) {
+      return;
+    }
+
+    var currentScroll = $(window).scrollTop();
+    var scrollDuration = 50;
+    var debounceWaitDuration = 10 * scrollDuration;
+    var delay = 50;
+    var landingOffset = $("#landing").offset().top;
+    if (currentScroll > 0 && currentScroll < landingOffset) {
+      disableScroll = true;
+      if (currentScroll >= lastScrollTop) {
+        console.log("scd");
+        setTimeout(function () {
+          $("html,body").animate(
+            { scrollTop: $("#landing").offset().top },
+            scrollDuration
+          );
+        }, delay);
+      } else {
+        console.log("scu");
+        $("html,body").animate({ scrollTop: 0 }, scrollDuration);
+      }
+      setTimeout(function () {
+        disableScroll = false;
+        lastScrollTop = $(window).scrollTop();
+      }, debounceWaitDuration);
+    }
+  };
+
+  $(document).ready(animateHero);
+  $(window).scroll(animateHero);
+  // $(window).scroll(heroScroll);
+  $(window).resize(animateHero);
+</script>

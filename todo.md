@@ -30,3 +30,5 @@
 - [ ] Content editor / headless CMS
 - [ ] Debounce onresize event for better performance
 - [ ] Debounce onscroll event for better performance
+- [ ] Generate proper favicons
+- [ ] Configure favicon
