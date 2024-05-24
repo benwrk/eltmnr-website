@@ -18,8 +18,7 @@
         </p>
       </div>
       <div class="col-3">
-        <h5 class="fw-bold">Navigation</h5>
-        <p class="m-0 fw-bold">Pages</p>
+        <h5 class="m-0 mb-1 fw-bold">Pages</h5>
         {% assign pages = site.pages | reverse %} {% for page_ in pages %}
         <p
           class="m-0 {% unless page_.navbar_display %} d-none disabled{% endunless %}"
@@ -28,7 +27,7 @@
         </p>
         {% endfor %}
         <br>
-        <p class="m-0 fw-bold">Projects</p>
+        <h5 class="m-0 mb-1 fw-bold">Projects</h5>
         {% assign pages = site.projects | reverse %} {% for page_ in pages %}
         <p
         class="m-0 {% unless page_.navbar_display %} d-none disabled{% endunless %}"
