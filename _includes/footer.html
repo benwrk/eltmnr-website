@@ -1,26 +1,75 @@
 <div class="footer text-white pb-auto">
   <div class="container py-5">
     <div class="row">
-      <div class="col-4">
-        <a href="/"><img src="/assets/images/logo.png" alt="" class="mb-4" /></a>
-        <p>&copy; Elite Manor — All rights reserved.</p>
+      <div class="col-3">
+        <a href="/"
+          ><img src="/assets/images/logo.png" alt="" class="genie mb-4"
+        /></a>
+      </div>
+      <div class="col-3">
+        <h5 class="fw-bold">Elite Manor Co., Ltd.</h5>
+        <p>5/203 Moo 4, Cherngtalay,<br />Thalang, Phuket 83110</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <span class="fw-bold">
+            &copy;
+            <!-- {{ page.date | date: "%Y" }} -->
+          </span>
+          All rights reserved
         </p>
       </div>
-      <div class="col-4">
-        <h3>Navigation</h3>
-        <p class="m-0"><a href="#">Navigation item</a></p>
-        <p class="m-0"><a href="#">Navigation item</a></p>
-        <p class="m-0"><a href="#">Navigation item</a></p>
-        <p class="m-0"><a href="#">Navigation item</a></p>
+      <div class="col-3">
+        <h5 class="fw-bold">Navigation</h5>
+        <p class="m-0 fw-bold">Pages</p>
+        {% assign pages = site.pages | reverse %} {% for page_ in pages %}
+        <p
+          class="m-0 {% unless page_.navbar_display %} d-none disabled{% endunless %}"
+        >
+          <a href="{{ page_.url | relative_url }}">{{ page_.title }}</a>
+        </p>
+        {% endfor %}
+        <br>
+        <p class="m-0 fw-bold">Projects</p>
+        {% assign pages = site.projects | reverse %} {% for page_ in pages %}
+        <p
+        class="m-0 {% unless page_.navbar_display %} d-none disabled{% endunless %}"
+        >
+          <a href="{{ page_.url | relative_url }}"><i class="fa fa-location-dot"></i> {{ page_.title }}</a>
+        </p>
+        {% endfor %}
       </div>
-      <div class="col-4">
-        <h3>Links</h3>
-        <p class="m-0"><a href="#">Link item</a></p>
-        <p class="m-0"><a href="#">Link item</a></p>
-        <p class="m-0"><a href="#">Link item</a></p>
-        <p class="m-0"><a href="#">Link item</a></p>
+      <div class="col-3">
+        <!-- <h5 class="fw-bold">Contact</h5> -->
+        <div class="d-flex">
+          <a
+            target="_blank"
+            href="tel:{{ site.telephone_number }}"
+            class="genie me-3"
+            ><i class="fa fa-3x fa-square-phone"></i
+          ></a>
+          <a target="_blank" href="mailto:{{ site.email }}" class="genie me-3"
+            ><i class="fa fa-3x fa-square-envelope"></i
+          ></a>
+          <a
+            target="_blank"
+            href="{{ 'https://facebook.com/' | append: site.facebook_username | absolute_url }}"
+            class="genie me-3"
+            ><i class="fa-brands fa-3x fa-square-facebook"></i
+          ></a>
+          <a
+            target="_blank"
+            href="{{ 'https://instagram.com/' | append: site.instagram_username | absolute_url }}"
+            class="genie me-3"
+            ><i class="fa-brands fa-3x fa-square-instagram"></i
+          ></a>
+          <!-- <a target="_blank" href="{{ 'https://line.me/R/ti/p/%40' | append: site.line_id | absolute_url }}" class="genie me-3"><i class="fa-brands fa-3x fa-line"></i></a> -->
+          <!-- <a target="_blank" href="{{ 'https://line.me/ti/p/' | append: site.line_id | absolute_url }}" class="genie me-3"><i class="fa-brands fa-3x fa-line"></i></a> -->
+          <a
+            target="_blank"
+            href="{{ 'https://youtube.com/channel/' | append: site.youtube_channel | absolute_url }}"
+            class="genie me-3"
+            ><i class="fa-brands fa-3x fa-square-youtube"></i
+          ></a>
+        </div>
       </div>
     </div>
   </div>

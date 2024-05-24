@@ -24,4 +24,10 @@
 
 .navbar a {
   color: #ffffffee !important;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.nav-item.active .nav-link {
+  border-bottom-color: currentcolor;
 }

@@ -1,11 +1,11 @@
 ---
-name: Contact Us
-order: 6
+title: Contact Us
+order: 4
 ---
 
 <div class="container-fluid p-0">
   <img
-    src="{{ '/assets/images/contact-us.jpg' | relative_url }}"
+    src="{{ '/assets/images/parallax-02.png' | relative_url }}"
     class="w-100"
     alt=""
     style="object-fit: cover"
@@ -13,28 +13,50 @@ order: 6
 </div>
 <div class="container py-5">
   <div class="row">
-    <div class="col-12 text-center">
+    <div class="col-12">
       <h1>Contact Us</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam aliquid
-        perspiciatis unde, tempora quam voluptate vitae sunt impedit aliquam,
-        alias commodi numquam fugit consectetur quae vel ea quos omnis! Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Sed nam aliquid
-        perspiciatis unde, tempora quam voluptate vitae sunt impedit aliquam,
-        alias commodi numquam fugit consectetur quae vel ea quos omnis! Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Sed nam aliquid
-        perspiciatis unde, tempora quam voluptate vitae sunt impedit aliquam,
-        alias commodi numquam fugit consectetur quae vel ea quos omnis!
-      </p>
     </div>
-    <div class="col-12 pt-5 text-center">
+    <div class="col-3 mt-4 mb-auto p-4 shadow-lg">
+      <h5 class="fw-bold">Elite Manor Co., Ltd.</h5>
+      <p>5/203 Moo 4, Cherngtalay,<br />Thalang, Phuket 83110</p>
+
+      <div class="d-flex flex-column">
+        <a
+          target="_blank"
+          href="tel:{{ site.telephone_number }}"
+          class="genie mb-2 text-decoration-none"
+          ><i class="fs-4 fa fa-square-phone me-1"></i
+        > {{ site.telephone_number }}</a>
+        <a target="_blank" href="mailto:{{ site.email }}"class="genie mb-2 text-decoration-none"
+          ><i class="fs-4 fa fa-square-envelope me-1"></i
+        > {{ site.email }}</a>
+        <a
+          target="_blank"
+          href="{{ 'https://facebook.com/' | append: site.facebook_username | absolute_url }}"
+          class="genie mb-2 text-decoration-none"
+          ><i class="fs-4 fa-brands fa-square-facebook me-1"></i
+        > {{ site.facebook_username }}</a>
+        <a
+          target="_blank"
+          href="{{ 'https://instagram.com/' | append: site.instagram_username | absolute_url }}"
+          class="genie mb-2 text-decoration-none"
+          ><i class="fs-4 fa-brands fa-square-instagram me-1"></i
+        > {{ site.instagram_username }}</a>
+        <a
+          target="_blank"
+          href="{{ 'https://youtube.com/channel/' | append: site.youtube_channel | absolute_url }}"
+          class="genie text-decoration-none"
+          ><i class="fs-4 fa-brands fa-square-youtube me-1"></i
+        > Elite Manor</a>
+      </div>
+    </div>
+    <div class="col-9 m-0 p-0 text-center">
       <iframe
-        class="w-100"
+        class="w-100 m-4 p-4 pt-5 shadow-lg"
         src="https://docs.google.com/forms/d/e/1FAIpQLScqZEzgs_67eXJ9mODYqkgrQ2BQFH2Fgz5cCHrmc9cEK5Wg6A/viewform?embedded=true"
-        height="800"
+        height="1100"
         frameborder="0"
-        marginheight="0"
-        marginwidth="0"
+        style="filter: sepia(0.25)"
         >Loading…</iframe
       >
     </div>

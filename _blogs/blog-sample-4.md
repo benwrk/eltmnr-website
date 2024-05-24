@@ -1,5 +1,5 @@
 ---
-name: Blog Sample
+title: Blog Sample
 date: 2023-11-07T13:07:54+07:00
 hero_image: /assets/images/slideshow-01.jpg
 ---

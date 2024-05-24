@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark fixed-top">
   <div class="container py-2">
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand genie-lg" href="/">
       <img
         loading="lazy"
         src="{{ 'assets/images/logo.png' | relative_url}}"
@@ -10,7 +10,7 @@
       />
     </a>
     <button
-      class="navbar-toggler px-0"
+      class="navbar-toggler rounded-0 px-0 genie"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarToggler"
@@ -21,29 +21,35 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
-      <ul class="navbar-nav nav-underline align-items-end m-2">
+      <ul class="navbar-nav nav-underline align-items-end m-2 mt-4 fw-semibold">
         {% assign pages = site.pages | reverse %}
         {% for page_ in pages %}
         <li
           class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}"
         >
-          <a class="nav-link" href="{{ page_.url }}">
+          <a class="pt-0 mb-0 nav-link genie" href="{{ page_.url }}">
             {{ page_.title }}{% if page.url == page_.url %}
             <span class="sr-only">(current)</span>{% endif %}
           </a>
         </li>
         {% endfor %}
+        <!-- <div class="dropdown-divider"></div> -->
+        <li class="nav-item">
+          <a class="nav-link text-white border-0 mt-4 mb-0">Projects</a>
+        </li>
         {% assign pages = site.projects | reverse %}
         {% for page_ in pages %}
         <li
           class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}"
         >
-          <a class="nav-link" href="{{ page_.url }}">
-            {{ page_.title }}{% if page.url == page_.url %}
+          <a class="pt-0 mb-0 nav-link fw-normal genie" href="{{ page_.url }}">
+            {{ page_.title }} {% if page.url == page_.url %}
             <span class="sr-only">(current)</span>{% endif %}
+            <i class="fa fa-location-dot"></i>
           </a>
         </li>
         {% endfor %}
+        <!-- </ul> -->
       </ul>
     </div>
   </div>

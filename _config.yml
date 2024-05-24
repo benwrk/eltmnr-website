@@ -8,6 +8,14 @@ permalink: /blog/:categories/:year/:month/:day/:title/
 seo_keywords:
   - elite manor
 
+# Contact Information
+telephone_number: "+66991614562"
+email: sales@eltmnr.com
+facebook_username: elitemanor
+instagram_username: elitemanor
+line_id: "~@elitemanor"
+youtube_channel: UCmOJDvPX6OcEZcGDpNAJW6Q
+
 collections:
   pages:
     output: true

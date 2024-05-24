@@ -5,12 +5,12 @@ layout: default
 <div class="container-fluid p-0">
   <img src="{{ page.hero_image | relative_url }}" alt="" />
 </div>
-<section class="container text-center my-5">
+<section class="container my-5">
     <div class="row">
-        <div class="col-12">
+        <article class="col-12 main-content">
             <p class="lead"><img src="{{ page.logo }}"></p>
             <p class="lead">{{ content }}</p>
-        </div>
+        </article>
         <div class="col-12 mt-5">
             <h1>Gallery</h1>
             <h2 class="mt-5">Interior</h2>
@@ -19,34 +19,23 @@ layout: default
                 <img loading="lazy" class="m-3 shadow-lg" src="{{ image }}" alt="" height="300px" width="400px" style="object-fit: cover;">
                 {% endfor %}
             </div>
-            <div class="w-100 d-flex flex-row flex-wrap">
-                {% for image in page.interior_images %}
-                <img loading="lazy" class="m-3 shadow-lg" src="{{ image }}" alt="" height="300px" width="400px" style="object-fit: cover;">
-                {% endfor %}
-            </div>
+
             <h2 class="mt-5">Exterior</h2>
             <div class="w-100 d-flex flex-row flex-wrap">
                 {% for image in page.exterior_images %}
                 <img loading="lazy" class="m-3 shadow-lg" src="{{ image }}" alt="" height="300px" width="400px" style="object-fit: cover;">
                 {% endfor %}
             </div>
-            <div class="w-100 d-flex flex-row flex-wrap">
-                {% for image in page.exterior_images %}
-                <img loading="lazy" class="m-3 shadow-lg" src="{{ image }}" alt="" height="300px" width="400px" style="object-fit: cover;">
-                {% endfor %}
-            </div>
+
             <h2 class="mt-5">Progress</h2>
-            [TODO] DATE PICKER GOES HERE
+            {% for progress in page.progress %}
+            DATE PICKER: {{ progress.date }}
             <div class="w-100 d-flex flex-row flex-wrap">
-                {% for image in page.exterior_images %}
+                {% for image in progress.images %}
                 <img loading="lazy" class="m-3 shadow-lg" src="{{ image }}" alt="" height="300px" width="400px" style="object-fit: cover;">
                 {% endfor %}
             </div>
-            <div class="w-100 d-flex flex-row flex-wrap">
-                {% for image in page.exterior_images %}
-                <img loading="lazy" class="m-3 shadow-lg" src="{{ image }}" alt="" height="300px" width="400px" style="object-fit: cover;">
-                {% endfor %}
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>

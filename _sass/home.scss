@@ -24,9 +24,8 @@
   background: transparent;
 }
 
-#exp {
-  background: url("/assets/images/slideshow-02.jpg") center no-repeat;
-  background-size: 100% cover;
+.lead-card {
+  min-height: 300px;
 }
 
 .project-card {

@@ -14,7 +14,7 @@
 - [ ] Blogs page
 - [ ] Contact us page / form
 - [ ] Hero scroll hint
-- [ ] Hero responsive scaling
+- [x] Hero responsive scaling
 - [x] Hero onresize handling
 - [ ] Page title generation
 - [ ] Meta tags generation
@@ -32,3 +32,8 @@
 - [ ] Debounce onscroll event for better performance
 - [ ] Generate proper favicons
 - [ ] Configure favicon
+
+
+## NX
+### Issues
+- [ ] Line URI not working
