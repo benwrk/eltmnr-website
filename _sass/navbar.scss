@@ -1,24 +1,27 @@
-.navbar-spacer {
-  min-height: 96px;
-  width: 100%;
-  background-color: #111111;
+// .navbar-spacer {
+//   min-height: 100px;
+//   width: 100%;
+//   background-color: #111111;
+// }
+
+.navbar-margin {
+  margin-top: 100px;
 }
 
 .navbar-toggler {
   border: none;
-  /* border-radius: 0; */
 }
 
 .navbar {
   background: #11111180;
-  min-height: 96px;
+  min-height: 100px;
 }
 
-@supports (backdrop-filter: saturate(300%) blur(10px)) or
-  (-webkit-backdrop-filter: saturate(300%) blur(10px)) {
+@supports (backdrop-filter: saturate(250%) blur(10px)) or
+  (-webkit-backdrop-filter: saturate(250%) blur(10px)) {
   .navbar {
-    backdrop-filter: saturate(300%) blur(10px);
-    -webkit-backdrop-filter: saturate(300%) blur(10px);
+    backdrop-filter: saturate(250%) blur(10px);
+    -webkit-backdrop-filter: saturate(250%) blur(10px);
   }
 }
 
@@ -32,6 +35,12 @@
   border-bottom-color: currentcolor;
 }
 
+.nav-underline .nav-link {
+  transition-property: all;
+  transition-duration: .3s;
+}
+
+// Navbar toggler button state transition animation
 .navbar-toggler {
   border: none;
   &:focus {
@@ -40,11 +49,11 @@
   &[aria-expanded="true"] {
     .icon-bar {
       &:nth-of-type(1) {
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
+        // -webkit-transform: rotate(45deg);
+        // -ms-transform: rotate(45deg);
         transform: rotate(45deg);
-        -webkit-transform-origin: 10% 10%;
-        -ms-transform-origin: 10% 10%;
+        // -webkit-transform-origin: 10% 10%;
+        // -ms-transform-origin: 10% 10%;
         transform-origin: 10% 10%;
       }
       &:nth-of-type(2) {
@@ -52,11 +61,11 @@
         filter: alpha(opacity=0);
       }
       &:nth-of-type(3) {
-        -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
+        // -webkit-transform: rotate(-45deg);
+        // -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
-        -webkit-transform-origin: 10% 90%;
-        -ms-transform-origin: 10% 90%;
+        // -webkit-transform-origin: 10% 90%;
+        // -ms-transform-origin: 10% 90%;
         transform-origin: 10% 90%;
       }
     }
@@ -72,8 +81,8 @@
       margin-top: 4px;
     }
     &:nth-of-type(1) {
-      -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
+      // -webkit-transform: rotate(0);
+      // -ms-transform: rotate(0);
       transform: rotate(0);
     }
     &:nth-of-type(2) {
@@ -81,8 +90,8 @@
       filter: alpha(opacity=100);
     }
     &:nth-of-type(3) {
-      -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
+      // -webkit-transform: rotate(0);
+      // -ms-transform: rotate(0);
       transform: rotate(0);
     }
   }

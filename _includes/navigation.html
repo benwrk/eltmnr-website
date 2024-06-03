@@ -1,16 +1,28 @@
 <nav class="navbar navbar-dark fixed-top">
   <div class="container py-2">
-    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-    <a class="navbar-brand genie-lg" href="/">
+    <button
+    class="navbar-toggler rounded-0 px-0 genie-lg origin-left"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarToggler"
+    aria-controls="navbarToggler"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand genie-lg" href="{% link _pages/home.html %}">
       <img
         loading="lazy"
-        src="{{ 'assets/images/logo.png' | relative_url}}"
+        src="{{ 'assets/images/logo.png' | relative_url }}"
         alt="Elite Manor Logo"
         height="50"
       />
     </a>
     <button
-      class="navbar-toggler rounded-0 px-0 genie"
+      class="navbar-toggler rounded-0 px-0 genie invisible"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarToggler"
@@ -18,28 +30,12 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <!-- <span class="navbar-toggler-icon"></span> -->
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
-      <ul class="navbar-nav nav-underline align-items-end m-2 my-4 fw-bold">
-        <li class="nav-item">
-          <a class="nav-link text-white border-0 mt-4 mb-0 fs-5">Pages</a>
-        </li>
-        {% assign pages = site.pages | reverse %}
-        {% for page_ in pages %}
-        <li
-          class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}"
-        >
-          <a class="pt-0 mb-0 nav-link genie fw-medium" href="{{ page_.url }}">
-            {{ page_.title }}{% if page.url == page_.url %}
-            <span class="sr-only">(current)</span>{% endif %}
-          </a>
-        </li>
-        {% endfor %}
-        <!-- <div class="dropdown-divider"></div> -->
+      <ul class="navbar-nav nav-underline my-4 fw-bold align-items-start">
         <li class="nav-item">
           <a class="nav-link text-white border-0 mt-4 mb-0 fs-5">Projects</a>
         </li>
@@ -48,14 +44,27 @@
         <li
           class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}"
         >
-          <a class="pt-0 mb-0 nav-link fw-medium genie" href="{{ page_.url }}">
-            <i class="fa fa-location-dot"></i>
+          <a class="pt-0 mb-0 nav-link fw-medium origin-left genie-lg" href="{{ page_.url }}">
+            <!-- <i class="fa fa-location-dot"></i> -->
             {{ page_.title }} {% if page.url == page_.url %}
             <span class="sr-only">(current)</span>{% endif %}
           </a>
         </li>
         {% endfor %}
-        <!-- </ul> -->
+        <li class="nav-item">
+          <a class="nav-link text-white border-0 mt-4 mb-0 fs-5">Pages</a>
+        </li>
+        {% assign pages = site.pages | reverse %}
+        {% for page_ in pages %}
+        <li
+          class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}"
+        >
+          <a class="pt-0 mb-0 nav-link fw-medium origin-left genie-lg" href="{{ page_.url }}">
+            {{ page_.title }}{% if page.url == page_.url %}
+            <span class="sr-only">(current)</span>{% endif %}
+          </a>
+        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>

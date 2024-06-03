@@ -1,6 +1,6 @@
 ---
 title: About
-order: 8
+order: 9
 layout: blogs
 hero_image: /assets/images/slideshow-01.jpg
 ---

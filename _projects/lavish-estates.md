@@ -66,7 +66,7 @@ Lavish Estates is also worth investing as a holiday home in Phuket. If you are i
     <li><span class="fw-bold">L01</span> Serenity 01</li>
     <li><span class="fw-bold">L02</span> Tranquil 01</li>
     <li><span class="fw-bold">L03</span> Serenity 02</li>
-    <li><span class="fw-bold">L04</span> Tranquil O2</li>
+    <li><span class="fw-bold">L04</span> Tranquil 02</li>
     <li><span class="fw-bold">L05</span> Extrava 02</li>
   </ul>
   </div>

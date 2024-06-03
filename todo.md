@@ -33,7 +33,7 @@
 - [ ] Generate proper favicons
 - [ ] Configure favicon
 
-
 ## NX
 ### Issues
 - [ ] Line URI not working
+- [ ] Homepage: Hero sometimes does not display on load

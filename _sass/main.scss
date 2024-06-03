@@ -5,11 +5,15 @@
 
 body {
   font-family: "Montserrat";
+  a {
+    text-decoration: none;
+  }
   // background-color: #111111;
 }
 
 html {
   background-color: #111111;
+  // filter: saturate(1.5);
 }
 
 // body * {
