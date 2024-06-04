@@ -4,22 +4,31 @@
 //   background-color: #111111;
 // }
 
-.navbar-margin {
-  margin-top: 100px;
-}
+// .navbar-margin {
+//   margin-top: 100px;
+// }
 
 .navbar-toggler {
   border: none;
 }
 
 .navbar {
+  transition: background-color;
+  transition-duration: $default-transform-duration;
   background: #11111180;
   min-height: 100px;
 }
 
+.navbar-at-top {
+  background: none;
+  .icon-bar {
+    filter: invert(1);
+  }
+}
+
 @supports (backdrop-filter: saturate(250%) blur(10px)) or
   (-webkit-backdrop-filter: saturate(250%) blur(10px)) {
-  .navbar {
+  .navbar:not(.navbar-at-top) {
     backdrop-filter: saturate(250%) blur(10px);
     -webkit-backdrop-filter: saturate(250%) blur(10px);
   }
@@ -37,7 +46,24 @@
 
 .nav-underline .nav-link {
   transition-property: all;
-  transition-duration: .3s;
+  transition-duration: $default-transform-duration;
+}
+
+// .navbar-brand {
+//   transform-origin: top;
+// }
+
+$brand-image-height: 50px;
+
+.brand-image {
+  transition-property: height filter;
+  transition-duration: $default-transform-duration;
+  height: $brand-image-height;
+}
+
+.navbar-at-top .brand-image {
+  height: 1.5 * $brand-image-height;
+  filter: invert(1);
 }
 
 // Navbar toggler button state transition animation
@@ -75,8 +101,7 @@
     display: block;
     height: 2px;
     background-color: #ffffffee;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+    transition: all $default-transform-duration;
     & + .icon-bar {
       margin-top: 4px;
     }
