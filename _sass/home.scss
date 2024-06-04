@@ -6,10 +6,10 @@
   width: 100%;
 }
 
-#hero-container,
-#landing {
-  background-color: #111111;
-}
+// #hero-container,
+// #landing {
+//   background-color: #111111;
+// }
 
 #hero {
   background: url("/assets/images/slideshow-01.jpg") center fixed no-repeat;
@@ -39,12 +39,12 @@
   object-fit: cover;
 }
 
-body, html {
+// body, html {
   // max-height: 100vh;
   // overflow-y: scroll;
   // scrollbar-width: 0;
   // scroll-snap-type: y mandatory;
-}
+// }
 
 // #hero-container, #home-content-container {
 //   scroll-snap-align: start start;
