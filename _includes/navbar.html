@@ -15,10 +15,10 @@
     </button>
     <a class="navbar-brand genie-lg" href="{% link _pages/home.html %}">
       <img
+        class="brand-image"
         loading="lazy"
         src="{{ 'assets/images/logo.png' | relative_url }}"
         alt="Elite Manor Logo"
-        height="50"
       />
     </a>
     <button
@@ -70,4 +70,23 @@
   </div>
 </nav>
 
-<div class="navbar-spacer"></div>
+<!-- <div class="navbar-spacer"></div> -->
+
+<script type="text/javascript">
+  var animateNavLogo = function () {
+    var currentScroll = $(window).scrollTop();
+    // var logoAnchor = $(".brand-image")[0];
+    var navbar = $(".navbar")[0];
+
+    if (currentScroll < 50) {
+      // logoAnchor.classList.add('at-top');
+      navbar.classList.add('navbar-at-top')
+    } else {
+      // logoAnchor.classList.remove('at-top');
+      navbar.classList.remove('navbar-at-top');
+    }
+  };
+
+  $(document).ready(animateNavLogo);
+  $(document).scroll(animateNavLogo);
+</script>
