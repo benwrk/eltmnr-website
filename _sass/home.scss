@@ -5,6 +5,7 @@
   max-height: 70vw;
   width: 100%;
 }
+
 #hero-container,
 #landing {
   background-color: #111111;
@@ -37,3 +38,14 @@
   width: 100%;
   object-fit: cover;
 }
+
+body, html {
+  // max-height: 100vh;
+  // overflow-y: scroll;
+  // scrollbar-width: 0;
+  // scroll-snap-type: y mandatory;
+}
+
+// #hero-container, #home-content-container {
+//   scroll-snap-align: start start;
+// }

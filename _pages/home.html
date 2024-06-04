@@ -5,109 +5,149 @@ navbar_display: false
 order: 0
 ---
 
-<div class="container-fluid px-0">
+<div class="container-fluid p-0">
   <div id="hero-container" class="">
     <div id="hero" class=""></div>
   </div>
-  <section id="landing" class="container-fluid py-5 m-0 text-white">
-    <div class="container px-0">
-      <div class="row my-5 align-items-center">
-        <div id="hero-target" class="col p-0 me-5 lead-card"></div>
-        <div class="col">
-          <h1>
-            Elite Manor
-          </h1>
-          <h3>
-            Innovative Living, Classic Luxury
-          </h3>
-          <p class="lead my-4">
-            Register now to receive latest special privileges & exclusive project information
-          </p>
-          <a class="btn btn-light py-3 fw-bold rounded-0 mb-2 genie" href="{% link _pages/register.html %}">Register Now <i class="fa fa-chevron-right"></i></a>
-        </div>
-      </div>
-      <div class="row my-5 align-items-center">
-        <div class="col p-0 me-5 lead-card" style="background: url('/assets/images/slideshow-03.jpg') center no-repeat; background-size: cover;">
-          <!-- <img class="w-100" src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}" alt="" style="object-fit: cover;"> -->
-        </div>
-        <div class="col">
-          <h3>To redefine innovative living through luxury, comfort, and pristine quality residences</h3>
-          <p class="lead">
-            Elite Manor is a real estate development firm that tailors to international clients who seek luxury and high-end housing in Thailand. Headquartered in Phuket, Thailand and focused on a target market of families, foreigners, and investors. We pride ourselves in our high quality builds and modern smart-home designs.
-          </p>
-        </div>
-      </div>
-      <div class="row my-5 align-items-center">
-        <div class="col p-0 me-5 lead-card d-flex bg-white">
-          <img class="m-auto" height="250" src="{{ '/assets/images/award-elite-manor.png' | relative_url }}" alt="" style="object-fit: cover;">
-        </div>
-        <div class="col">
-          <h3>Best Innovative Developer South East Asia 2023</h3>
-          <p class="lead">
-            We tailor to international clients who seek luxury and high-end housing in Thailand. Headquartered in Phuket, Thailand and focused on a target market of families, foreigners, and investors. We pride ourselves in our high quality builds and modern smart-home designs.
-          </p>
-          <a class="btn btn-light py-3 fw-bold rounded-0 mb-2 genie" href="{% link _pages/about.md %}">Learn More <i class="fa fa-chevron-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="projects" class="container text-center mt-5">
-    <h1 class="fw-bold">Projects</h1>
-    <a
-      class="link-dark link-underline-opacity-0"
-      href="/projects/lavish-estates"
-    >
-      <div class="row mt-4">
-        <div class="col d-flex align-items-justified">
-          <div class="project-card m-4 d-flex flex-column shadow-lg genie-sm">
-            <div>
-              <img
-                class="project-card-image"
-                src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="project-card-description p-4 my-auto">
-              <img
-                class="mb-4"
-                src="/assets/images/lavish-estates-logo-light.png"
-                height="80px"
-              />
-              <p class="lead">
-                The harmony of innovative living through luxury, comfort, and
-                pristine quality residences in Phuket
-              </p>
-            </div>
-            <a class="btn btn-dark py-3 fw-bold rounded-0" href="/projects/lavish-estates">Explore <i class="fa fa-chevron-right"></i></a>
+  <div id="home-content-container" class="container-fluid p-0">
+    <section id="landing" class="container-fluid py-5 m-0 text-white">
+      <div class="container px-0">
+        <div class="row my-5 align-items-center">
+          <div id="hero-target" class="col p-0 me-5 lead-card"></div>
+          <div class="col">
+            <h1>Elite Manor</h1>
+            <h3>Innovative Living, Classic Luxury</h3>
+            <p class="lead my-4">
+              Register now to receive latest special privileges & exclusive
+              project information
+            </p>
+            <a
+              class="btn btn-light py-3 fw-bold rounded-0 mb-2 genie"
+              href="{% link _pages/register.html %}"
+              >Register Now <i class="fa fa-chevron-right"></i
+            ></a>
           </div>
-          <div class="project-card m-4 d-flex flex-column shadow-lg">
-            <div>
-              <img
-                class="project-card-image"
-                src="{{ '/assets/images/project-03.jpg' | relative_url }}"
-                alt=""
-                srcset=""
-              />
+        </div>
+        <div class="row my-5 align-items-center">
+          <div
+            class="col p-0 me-5 lead-card"
+            style="
+              background: url('/assets/images/slideshow-03.jpg') center
+                no-repeat;
+              background-size: cover;
+            "
+          >
+            <!-- <img class="w-100" src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}" alt="" style="object-fit: cover;"> -->
+          </div>
+          <div class="col">
+            <h3>
+              To redefine innovative living through luxury, comfort, and
+              pristine quality residences
+            </h3>
+            <p class="lead">
+              Elite Manor is a real estate development firm that tailors to
+              international clients who seek luxury and high-end housing in
+              Thailand. Headquartered in Phuket, Thailand and focused on a
+              target market of families, foreigners, and investors. We pride
+              ourselves in our high quality builds and modern smart-home
+              designs.
+            </p>
+          </div>
+        </div>
+        <div class="row my-5 align-items-center">
+          <div class="col p-0 me-5 lead-card d-flex bg-white">
+            <img
+              class="m-auto"
+              height="250"
+              src="{{ '/assets/images/award-elite-manor.png' | relative_url }}"
+              alt=""
+              style="object-fit: cover"
+            />
+          </div>
+          <div class="col">
+            <h3>Best Innovative Developer South East Asia 2023</h3>
+            <p class="lead">
+              We tailor to international clients who seek luxury and high-end
+              housing in Thailand. Headquartered in Phuket, Thailand and focused
+              on a target market of families, foreigners, and investors. We
+              pride ourselves in our high quality builds and modern smart-home
+              designs.
+            </p>
+            <a
+              class="btn btn-light py-3 fw-bold rounded-0 mb-2 genie"
+              href="{% link _pages/about.md %}"
+              >Learn More <i class="fa fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="container text-center mt-5">
+      <h1 class="fw-bold">Projects</h1>
+      <a
+        class="link-dark link-underline-opacity-0"
+        href="/projects/lavish-estates"
+      >
+        <div class="row mt-4">
+          <div class="col d-flex align-items-justified">
+            <div class="project-card m-4 d-flex flex-column shadow-lg genie-sm">
+              <div>
+                <img
+                  class="project-card-image"
+                  src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="project-card-description p-4 my-auto">
+                <img
+                  class="mb-4"
+                  src="/assets/images/lavish-estates-logo-light.png"
+                  height="80px"
+                />
+                <p class="lead">
+                  The harmony of innovative living through luxury, comfort, and
+                  pristine quality residences in Phuket
+                </p>
+              </div>
+              <a
+                class="btn btn-dark py-3 fw-bold rounded-0"
+                href="/projects/lavish-estates"
+                >Explore <i class="fa fa-chevron-right"></i
+              ></a>
             </div>
-            <div class="project-card-description p-4 my-auto">
-              <!-- <img
+            <div class="project-card m-4 d-flex flex-column shadow-lg">
+              <div>
+                <img
+                  class="project-card-image"
+                  src="{{ '/assets/images/project-03.jpg' | relative_url }}"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="project-card-description p-4 my-auto">
+                <!-- <img
                 class="mb-4"
                 src="/assets/images/lavish-estates-logo-light.png"
                 height="80px"
               /> -->
-              <div class="mb-4">Cornwell<br>Logo<br>Holder</div>
-              <p class="lead">
-                Cornwell description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              </p>
+                <div class="mb-4">Cornwell<br />Logo<br />Holder</div>
+                <p class="lead">
+                  Cornwell description Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+              </div>
+              <a
+                class="btn btn-dark py-3 fw-bold rounded-0 disabled"
+                href="/projects/lavish-estates"
+                >Coming Soon</a
+              >
             </div>
-            <a class="btn btn-dark py-3 fw-bold rounded-0 disabled" href="/projects/lavish-estates">Coming Soon</a>
           </div>
         </div>
-      </div>
-    </a>
-  </section>
-  <!-- <div
+      </a>
+    </section>
+    <!-- <div
     id="carouselExampleIndicators"
     class="carousel slide shadow-lg my-5 mx-5"
   >
@@ -199,7 +239,7 @@ order: 0
       <span class="visually-hidden">Next</span>
     </button>
   </div> -->
-  <!-- <div id="about" class="container text-center mt-5">
+    <!-- <div id="about" class="container text-center mt-5">
     <h1>About Elite Manor</h1>
     <p>
       Elite Manor is a real estate development firm that tailors to
@@ -219,7 +259,7 @@ order: 0
     </p>
     <a class="btn btn-dark rounded-0 genie" href="/about">Read more <i class="fa fa-chevron-right"></i></a>
   </div> -->
-  <!-- <div id="about" class="container text-center mt-5 mb-5">
+    <!-- <div id="about" class="container text-center mt-5 mb-5">
     <h1>Key Features</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore
@@ -228,18 +268,23 @@ order: 0
       accusantium perspiciatis! Voluptate.
     </p>
   </div> -->
-  <!-- <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-  <div class="container-fluid shadow-lg p-0 mt-5">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15810.110005276163!2d98.3336935!3d7.8397258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30502f8b828258dd%3A0x65e112219235d17f!2sLavish%20Estates%20by%20Elite%20Manor!5e0!3m2!1sen!2sth!4v1716525107023!5m2!1sen!2sth"
-      width="100%"
-      height="600"
-      frameborder="0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      style="margin-bottom: -7px; filter: invert(.9) sepia(.8) saturate(.8) grayscale(.1); min-height: 600px;"
-    ></iframe>
+    <!-- <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    <div class="container-fluid shadow-lg p-0 mt-5">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15810.110005276163!2d98.3336935!3d7.8397258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30502f8b828258dd%3A0x65e112219235d17f!2sLavish%20Estates%20by%20Elite%20Manor!5e0!3m2!1sen!2sth!4v1716525107023!5m2!1sen!2sth"
+        width="100%"
+        height="600"
+        frameborder="0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        style="
+          margin-bottom: -7px;
+          filter: invert(0.9) sepia(0.8) saturate(0.8) grayscale(0.1);
+          min-height: 600px;
+        "
+      ></iframe>
+    </div>
   </div>
 </div>
 
@@ -293,44 +338,229 @@ order: 0
     hero.css({
       transform: `${translate}`,
     });
-    // console.log(translate);
+
+    // $("#landing, #hero-container").css({
+    //   "filter": `invert(${stage * 100}%)`
+    // })
+    console.log(translate);
   };
 
-  var lastScrollTop = 0;
-  var disableScroll = false;
-  var heroScroll = function () {
-    if (disableScroll) {
-      return;
-    }
+  // var lastScrollTop = 0;
+  // var disableScroll = false;
+  // var heroScroll = function () {
+  //   if (disableScroll) {
+  //     return;
+  //   }
 
-    var currentScroll = $(window).scrollTop();
-    var scrollDuration = 50;
-    var debounceWaitDuration = 10 * scrollDuration;
-    var delay = 50;
-    var landingOffset = $("#landing").offset().top;
-    if (currentScroll > 0 && currentScroll < landingOffset) {
-      disableScroll = true;
-      if (currentScroll >= lastScrollTop) {
-        console.log("scd");
-        setTimeout(function () {
-          $("html,body").animate(
-            { scrollTop: $("#landing").offset().top },
-            scrollDuration
-          );
-        }, delay);
-      } else {
-        console.log("scu");
-        $("html,body").animate({ scrollTop: 0 }, scrollDuration);
-      }
-      setTimeout(function () {
-        disableScroll = false;
-        lastScrollTop = $(window).scrollTop();
-      }, debounceWaitDuration);
-    }
-  };
+  //   var currentScroll = $(window).scrollTop();
+  //   var scrollDuration = 50;
+  //   var debounceWaitDuration = 10 * scrollDuration;
+  //   var delay = 50;
+  //   var landingOffset = $("#landing").offset().top;
+  //   if (currentScroll > 0 && currentScroll < landingOffset) {
+  //     disableScroll = true;
+  //     if (currentScroll >= lastScrollTop) {
+  //       console.log("scd");
+  //       setTimeout(function () {
+  //         $("html,body").animate(
+  //           { scrollTop: $("#landing").offset().top },
+  //           scrollDuration
+  //         );
+  //       }, delay);
+  //     } else {
+  //       console.log("scu");
+  //       $("html,body").animate({ scrollTop: 0 }, scrollDuration);
+  //     }
+  //     setTimeout(function () {
+  //       disableScroll = false;
+  //       lastScrollTop = $(window).scrollTop();
+  //     }, debounceWaitDuration);
+  //   }
+  // };
+
+  // var isScrolling = function() {
+  //   var lastScroll = $(window).scrollTop();
+  //   var interval = setInterval(function() {
+  //     var currentScroll = $(window).scrollTop();
+  //     if (lastScroll === currentScroll) {
+
+  //     }
+  //   });
+  // };
+
+  // var lastScrollTop = 0;
+  // var deactivateScroll = false;
+  // var stickyScroll = function () {
+  //   var currentScroll = $(window).scrollTop();
+  //   var landingTop = $("#landing")[0].offsetTop;
+
+  //   console.log(
+  //     `[stickyScroll: ${currentScroll} ${landingTop} ${lastScrollTop}]`
+  //   );
+  //   if (currentScroll > landingTop || deactivateScroll) {
+  //     return;
+  //   }
+
+  //   if (currentScroll < lastScrollTop) {
+  //     // window.scrollTo(0, 0);
+  //     console.log("Scrolling to 0");
+  //     deactivateScroll = true;
+  //     $("html").animate(
+  //       {
+  //         scrollTop: 0,
+  //       },
+  //       {
+  //         duration: 300,
+  //         start: function () {
+  //           deactivateScroll = true;
+  //         },
+  //         step: function () {
+  //           deactivateScroll = true;
+  //         },
+  //         complete: function () {
+  //           console.log("Scroll finished");
+  //           // setTimeout(function () {
+  //           deactivateScroll = false;
+  //           // }, 500);
+  //         },
+  //       }
+  //     );
+  //   }
+
+  //   lastScrollTop = currentScroll;
+
+  //   console.log(
+  //     `[stickyScroll: ${currentScroll} ${landingTop} ${lastScrollTop}]`
+  //   );
+
+  //   // if (currentScroll > lastScrollTop) {
+  //   //   window.scrollTo(0, landingTop);
+  //   // }
+  // };
 
   $(document).ready(animateHero);
-  $(window).scroll(animateHero);
+  $(document).scroll(animateHero);
   // $(window).scroll(heroScroll);
   $(window).resize(animateHero);
+
+  // var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+
+  // function preventDefault(e) {
+  //   e.preventDefault();
+  // }
+
+  // function preventDefaultForScrollKeys(e) {
+  //   if (keys[e.keyCode]) {
+  //     preventDefault(e);
+  //     return false;
+  //   }
+  // }
+
+  // // modern Chrome requires { passive: false } when adding event
+  // var supportsPassive = false;
+  // try {
+  //   window.addEventListener(
+  //     "test",
+  //     null,
+  //     Object.defineProperty({}, "passive", {
+  //       get: function () {
+  //         supportsPassive = true;
+  //       },
+  //     })
+  //   );
+  // } catch (e) {}
+
+  // var wheelOpt = supportsPassive ? { passive: false } : false;
+  // var wheelEvent =
+  //   "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
+
+  // // call this to Disable
+  // function disableScroll() {
+  //   window.addEventListener("DOMMouseScroll", preventDefault, false); // older FF
+  //   window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  //   window.addEventListener("touchmove", preventDefault, wheelOpt); // mobile
+  //   window.addEventListener("keydown", preventDefaultForScrollKeys, false);
+  // }
+
+  // // call this to Enable
+  // function enableScroll() {
+  //   window.removeEventListener("DOMMouseScroll", preventDefault, false);
+  //   window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+  //   window.removeEventListener("touchmove", preventDefault, wheelOpt);
+  //   window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
+  // }
+
+  // var lastScrollTop = 0;
+  // var stEnable = true;
+  // var queuedScrollTask = -1;
+  // var lastCalledAt = 0;
+  // var queuedAnimationEndAt = 0;
+
+  // var stickyScroll = function (event) {
+  //   // var time = Date.now();
+  //   // if (time - lastCalledAt < 100) {
+  //   //   return;
+  //   // }
+  //   // console.log("thru");
+  //   // lastCalledAt = time;
+  //   var st = $(this).scrollTop();
+  //   var landingTop = $("#landing")[0].offsetTop;
+    
+  //   // if (!stEnable || st > landingTop) return;
+  //   if (Date.now() > queuedAnimationEndAt) {
+  //     // if (queuedScrollTask != -1) {
+  //     //   clearTimeout(queuedScrollTask);
+  //     // }
+  //     // stEnable = false;
+  //     if (st > lastScrollTop) {
+  //       console.log(queuedScrollTask);
+  //       if (st > 0 && st < landingTop) {
+  //         // stEnable = false;
+
+  //         // disableScroll();
+  //         // window.scrollTo(0, landingTop);
+  //         queuedAnimationEndAt = Date.now() + 300;
+  //         queuedScrollTask = setTimeout(function () {
+  //           window.scrollTo(0, landingTop);
+  //           // $("html, body").animate({ scrollTop: landingTop });
+  //           setTimeout(function () {
+  //             // queuedScrollTask = -1;
+  //             // stEnable = true;
+  //           }, 300);
+  //         }, 20);
+  //       }
+  //     } else {
+  //       if (st < landingTop - 5 && st > 0) {
+  //         // stEnable = false;
+  //         if (queuedScrollTask != -1) {
+  //           clearTimeout(queuedScrollTask);
+  //           // return;
+  //         }
+  //         // disableScroll();
+  //         // window.scrollTo(0, landingTop);
+  //         queuedAnimationEndAt = Date.now() + 300;
+  //         queuedScrollTask = setTimeout(function () {
+  //           window.scrollTo(0, 0);
+  //           // $("html, body").animate({ scrollTop: 0 });
+  //           setTimeout(function () {
+  //             // queuedScrollTask = -1;
+  //             // stEnable = true;
+  //           }, 300);
+  //         }, 20);
+  //         // stEnable = false;
+  //         // disableScroll()
+  //         // window.scrollTo(0, 0);
+  //       }
+  //     }
+  //   }
+  //   // setTimeout(function () {
+  //   // stEnable = true;
+  //   // enableScroll();
+  //   // }, 400);
+  //   lastScrollTop = st;
+  // };
+
+  // $(window).scroll(stickyScroll);
+
+  // $(document).scroll(stickyScroll);
 </script>

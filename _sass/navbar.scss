@@ -15,22 +15,27 @@
 .navbar {
   transition: background-color;
   transition-duration: $default-transform-duration;
-  background: #11111180;
   min-height: 100px;
-}
+  
+  &:not(.navbar-at-top) {
+    background: #11111180;
+  }
 
-.navbar-at-top {
-  background: none;
-  .icon-bar {
-    filter: invert(1);
+  &.navbar-at-top {
+    background: none;
+    .icon-bar {
+      filter: invert(1);
+    }
   }
 }
 
 @supports (backdrop-filter: saturate(250%) blur(10px)) or
   (-webkit-backdrop-filter: saturate(250%) blur(10px)) {
-  .navbar:not(.navbar-at-top) {
-    backdrop-filter: saturate(250%) blur(10px);
-    -webkit-backdrop-filter: saturate(250%) blur(10px);
+  .navbar {
+    &:not(.navbar-at-top) {
+      backdrop-filter: saturate(250%) blur(10px);
+      -webkit-backdrop-filter: saturate(250%) blur(10px);
+    }
   }
 }
 
@@ -48,10 +53,6 @@
   transition-property: all;
   transition-duration: $default-transform-duration;
 }
-
-// .navbar-brand {
-//   transform-origin: top;
-// }
 
 $brand-image-height: 50px;
 
