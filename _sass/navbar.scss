@@ -8,9 +8,11 @@
 //   margin-top: 100px;
 // }
 
-.navbar-toggler {
-  border: none;
-}
+// .navbar-toggler {
+//   border: none;
+// }
+
+$navbar-background-color: rgba(255, 255, 255, 0.7);
 
 .navbar {
   transition: background-color;
@@ -18,7 +20,7 @@
   min-height: 100px;
   
   &:not(.navbar-at-top) {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: $navbar-background-color;
     // background: rgba(245, 245, 220, 0.6);
   }
 
@@ -66,6 +68,10 @@ $brand-image-height: 50px;
 .navbar-at-top .brand-image {
   height: 1.5 * $brand-image-height;
   // filter: invert(1);
+}
+
+.navbar-at-top .navbar-toggler {
+  background-color: $navbar-background-color;
 }
 
 // Navbar toggler button state transition animation

@@ -16,7 +16,7 @@ order: 0
         <div class="col">
           <h1>Elite Manor</h1>
           <h3>Innovative Living, Classic Luxury</h3>
-          <p class="lead my-4">
+          <p class="my-4">
             Register now to receive latest special privileges & exclusive
             project information
           </p>
@@ -42,7 +42,7 @@ order: 0
             To redefine innovative living through luxury, comfort, and pristine
             quality residences
           </h3>
-          <p class="lead">
+          <p>
             Elite Manor is a real estate development firm that tailors to
             international clients who seek luxury and high-end housing in
             Thailand. Headquartered in Phuket, Thailand and focused on a target
@@ -51,7 +51,7 @@ order: 0
           </p>
         </div>
       </div>
-      <div class="row my-5 align-items-center">
+      {% comment %} <div class="row my-5 align-items-center">
         <div class="col p-0 me-5 lead-card d-flex">
           <img
             class="m-auto"
@@ -63,7 +63,7 @@ order: 0
         </div>
         <div class="col">
           <h3>Best Innovative Developer South East Asia 2023</h3>
-          <p class="lead">
+          <p>
             We tailor to international clients who seek luxury and high-end
             housing in Thailand. Headquartered in Phuket, Thailand and focused
             on a target market of families, foreigners, and investors. We pride
@@ -75,70 +75,82 @@ order: 0
             >Learn More <i class="fa fa-chevron-right"></i
           ></a>
         </div>
-      </div>
+      </div> {% endcomment %}
     </div>
   </section>
   <section id="projects" class="container text-center mt-5">
     <h1 class="fw-bold">Projects</h1>
-    <a class="link-underline-opacity-0" href="/projects/lavish-estates">
-      <div class="row mt-4">
-        <div class="col d-flex align-items-justified">
-          <div class="project-card m-4 d-flex flex-column shadow-lg genie-sm">
-            <div>
-              <img
-                class="project-card-image"
-                src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="project-card-description p-4 my-auto">
-              <img
-                class="mb-4"
-                src="/assets/images/lavish-estates-logo-light.png"
-                height="80px"
-              />
-              <p class="lead">
-                The harmony of innovative living through luxury, comfort, and
-                pristine quality residences in Phuket
-              </p>
-            </div>
-            <a
-              class="btn btn-dark py-3 fw-bold rounded-0"
-              href="/projects/lavish-estates"
-              >Explore <i class="fa fa-chevron-right"></i
-            ></a>
+    <div class="row mt-4">
+      <div class="col d-flex align-items-justified">
+        <a
+          href="{% link _projects/lavish-estates.md %}"
+          class="link-underline-opacity-0 link-dark project-card m-4 d-flex flex-column shadow-lg genie-sm"
+        >
+          <div>
+            <img
+              class="project-card-image"
+              src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}"
+              alt=""
+              srcset=""
+            />
           </div>
-          <div class="project-card m-4 d-flex flex-column shadow-lg">
-            <div>
-              <img
-                class="project-card-image"
-                src="{{ '/assets/images/project-03.jpg' | relative_url }}"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="project-card-description p-4 my-auto">
-              <!-- <img
-                class="mb-4"
-                src="/assets/images/lavish-estates-logo-light.png"
-                height="80px"
-              /> -->
-              <div class="mb-4">Cornwell<br />Logo<br />Holder</div>
-              <p class="lead">
-                Cornwell description Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
-              </p>
-            </div>
-            <a
-              class="btn btn-dark py-3 fw-bold rounded-0 disabled"
-              href="/projects/lavish-estates"
-              >Coming Soon</a
-            >
+          <div class="project-card-description p-4 my-auto">
+            <img
+              class="mb-4"
+              src="/assets/images/lavish-estates-logo-light.png"
+              height="80px"
+            />
+            <p>
+              The harmony of innovative living through luxury, comfort, and
+              pristine quality residences in Phuket
+            </p>
           </div>
-        </div>
+          <div class="btn btn-dark py-3 fw-bold rounded-0">
+            Explore <i class="fa fa-chevron-right"></i>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="disabled link-underline-opacity-0 link-dark project-card m-4 d-flex flex-column shadow-lg"
+        >
+          <div>
+            <img
+              class="project-card-image"
+              src="{{ 'assets/images/project-03.jpg' | relative_url }}"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="project-card-description p-4 my-auto">
+            <img
+              class="mb-4"
+              src="/assets/images/lavish-estates-logo-light.png"
+              height="80px"
+            />
+            <p>
+              Cornwell description Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.
+            </p>
+          </div>
+          <div class="btn btn-dark py-3 fw-bold rounded-0 disabled">
+            Coming Soon
+          </div>
+        </a>
       </div>
-    </a>
+    </div>
+  </section>
+  <section id="awards" class="container text-center mt-5">
+    <h1 class="fw-bold">Awards</h1>
+    <div class="row">
+      <div class="col-6">
+        <img class="m-4" height="300" src="/assets/images/dot-award-sea-2023.svg" alt="">
+        <p class="fw-bold">Best Innovative Developer South East Asia 2023</p>
+      </div>
+      <div class="col-6">
+        <img class="m-4" height="300" src="/assets/images/dot-award-thailand-2023.svg" alt="">
+        <p class="fw-bold">Best Innovative Developer Thailand 2023</p>
+      </div>
+    </div>
   </section>
   <!-- <div
     id="carouselExampleIndicators"
