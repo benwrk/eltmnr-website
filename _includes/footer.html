@@ -1,12 +1,10 @@
 <div class="footer text-white pb-auto">
   <div class="container py-5">
     <div class="row">
-      <div class="col-3">
+      <div class="col-4">
         <a href="/"
           ><img src="/assets/images/logo.png" alt="" class="genie mb-4"
         /></a>
-      </div>
-      <div class="col-3">
         <h5 class="fw-bold">Elite Manor Co., Ltd.</h5>
         <p>5/203 Moo 4, Cherngtalay,<br />Thalang, Phuket 83110</p>
         <p>
@@ -17,7 +15,7 @@
           All rights reserved
         </p>
       </div>
-      <div class="col-3">
+      <div class="col-4">
         <h5 class="m-0 mb-1 fw-bold">Pages</h5>
         {% assign pages = site.pages | reverse %} {% for page_ in pages %}
         <p
@@ -36,37 +34,37 @@
         </p>
         {% endfor %}
       </div>
-      <div class="col-3">
+      <div class="col-4">
         <!-- <h5 class="fw-bold">Contact</h5> -->
         <div class="d-flex">
           <a
             target="_blank"
             href="tel:{{ site.telephone_number }}"
-            class="genie me-3"
-            ><i class="fa fa-3x fa-square-phone"></i
+            class="genie-lg me-3"
+            ><i class="fa fa-2x fa-square-phone"></i
           ></a>
-          <a target="_blank" href="mailto:{{ site.email }}" class="genie me-3"
-            ><i class="fa fa-3x fa-square-envelope"></i
+          <a target="_blank" href="mailto:{{ site.email }}" class="genie-lg me-3"
+            ><i class="fa fa-2x fa-square-envelope"></i
           ></a>
           <a
             target="_blank"
             href="{{ 'https://facebook.com/' | append: site.facebook_username | absolute_url }}"
-            class="genie me-3"
-            ><i class="fa-brands fa-3x fa-square-facebook"></i
+            class="genie-lg me-3"
+            ><i class="fa-brands fa-2x fa-square-facebook"></i
           ></a>
           <a
             target="_blank"
             href="{{ 'https://instagram.com/' | append: site.instagram_username | absolute_url }}"
-            class="genie me-3"
-            ><i class="fa-brands fa-3x fa-square-instagram"></i
+            class="genie-lg me-3"
+            ><i class="fa-brands fa-2x fa-square-instagram"></i
           ></a>
           <!-- <a target="_blank" href="{{ 'https://line.me/R/ti/p/%40' | append: site.line_id | absolute_url }}" class="genie me-3"><i class="fa-brands fa-3x fa-line"></i></a> -->
           <!-- <a target="_blank" href="{{ 'https://line.me/ti/p/' | append: site.line_id | absolute_url }}" class="genie me-3"><i class="fa-brands fa-3x fa-line"></i></a> -->
           <a
             target="_blank"
             href="{{ 'https://youtube.com/channel/' | append: site.youtube_channel | absolute_url }}"
-            class="genie me-3"
-            ><i class="fa-brands fa-3x fa-square-youtube"></i
+            class="genie-lg me-3"
+            ><i class="fa-brands fa-2x fa-square-youtube"></i
           ></a>
         </div>
       </div>
