@@ -9,131 +9,155 @@ order: 0
   <div id="hero-container" class="">
     <div id="hero" class=""></div>
   </div>
+  <a
+    id="hero-scroll-hint"
+    href="#landing"
+    class="btn btn-dark bg-transparent border-0 rounded-0 w-100 text-center fs-4 d-flex align-items-center justify-content-center"
+  >
+    {% comment %} <i class="fa fa-chevron-down"></i> {% endcomment %}
+    <span>Explore <i class="fa fa-chevron-down"></i></span>
+  </a>
   <section id="landing" class="container-fluid py-5 m-0">
-    <div class="container px-0">
-      <div class="row my-5 align-items-center">
-        <div id="hero-target" class="col p-0 me-5 lead-card"></div>
-        <div class="col">
-          <h1>Elite Manor</h1>
-          <h3>Innovative Living, Classic Luxury</h3>
-          <p class="my-4">
-            Register now to receive latest special privileges & exclusive
-            project information
-          </p>
-          <a
-            class="btn btn-dark py-3 fw-bold rounded-0 mb-2 genie"
-            href="{% link _pages/register.html %}"
-            >Register Now <i class="fa fa-chevron-right"></i
-          ></a>
-        </div>
+    <div class="row">
+      <div id="hero-target" class="col-lg-10 col-12 p-0 lead-card"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 col-12 d-flex flex-column align-items-end my-5">
+        <h1 class="reveal" style="font-size: 96px">Elite Manor</h1>
+        <h1 class="reveal" style="font-size: 40px">
+          Innovative Living, Classic Luxury
+        </h1>
+        <p class="reveal mt-4 mb-2 fs-md-5">
+          Register now to receive latest special privileges & exclusive project
+          information
+        </p>
+        <a
+          class="reveal btn btn-dark p-3 fw-bold rounded-0 mb-2 genie"
+          href="{% link _pages/register.html %}"
+          >Register Now <i class="fa fa-chevron-right"></i
+        ></a>
       </div>
-      <div class="row my-5 align-items-center">
-        <div
-          class="col p-0 me-5 lead-card"
-          style="
-            background: url('/assets/images/slideshow-03.jpg') center no-repeat;
-            background-size: cover;
-          "
-        >
-          <!-- <img class="w-100" src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}" alt="" style="object-fit: cover;"> -->
-        </div>
-        <div class="col">
-          <h3>
-            To redefine innovative living through luxury, comfort, and pristine
-            quality residences
-          </h3>
-          <p>
-            Elite Manor is a real estate development firm that tailors to
-            international clients who seek luxury and high-end housing in
-            Thailand. Headquartered in Phuket, Thailand and focused on a target
-            market of families, foreigners, and investors. We pride ourselves in
-            our high quality builds and modern smart-home designs.
-          </p>
-        </div>
+      <div
+        class="col-lg-10 offset-lg-2 col-12 p-0 me-5 lead-card reveal"
+        style="
+          background: url('/assets/images/slideshow-03.jpg') center no-repeat;
+          background-size: cover;
+        "
+      >
+        <!-- <img class="w-100" src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}" alt="" style="object-fit: cover;"> -->
       </div>
-      <div class="row my-5 align-items-center">
-        <div
-          class="col p-0 me-5 lead-card"
-          style="
-            background: url('/assets/images/slideshow-05.jpg') center no-repeat;
-            background-size: cover;
-          "
-        >
-        </div>
-        <div class="col">
-          {% comment %} <h3>Best Innovative Developer South East Asia 2023</h3> {% endcomment %}
-          <p>
-            We tailor to international clients who seek luxury and high-end
-            housing in Thailand. Headquartered in Phuket, Thailand and focused
-            on a target market of families, foreigners, and investors. We pride
-            ourselves in our high quality builds and modern smart-home designs.
-          </p>
-          <a
-            class="btn btn-dark py-3 fw-bold rounded-0 mb-2 genie"
-            href="{% link _pages/about.md %}"
-            >Learn More <i class="fa fa-chevron-right"></i
-          ></a>
-        </div>
+      <div
+        class="col-lg-6 offset-lg-2 col-12 d-flex flex-column align-items-start my-5"
+      >
+        <h3 class="reveal">
+          To redefine innovative living through luxury, comfort, and pristine
+          quality residences
+        </h3>
+        <p class="reveal">
+          Elite Manor is a real estate development firm that tailors to
+          international clients who seek luxury and high-end housing in
+          Thailand. Headquartered in Phuket, Thailand and focused on a target
+          market of families, foreigners, and investors. We pride ourselves in
+          our high quality builds and modern smart-home designs.
+        </p>
+      </div>
+      <div
+        class="col-lg-10 col-12 p-0 me-5 lead-card reveal"
+        style="
+          background: url('/assets/images/slideshow-05.jpg') center no-repeat;
+          background-size: cover;
+        "
+      >
+        <!-- <img class="w-100" src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}" alt="" style="object-fit: cover;"> -->
+      </div>
+      <div
+        class="col-lg-6 offset-lg-4 col-12 d-flex flex-column align-items-end my-5"
+      >
+        <p class="reveal">
+          We tailor to international clients who seek luxury and high-end
+          housing in Thailand. Headquartered in Phuket, Thailand and focused on
+          a target market of families, foreigners, and investors. We pride
+          ourselves in our high quality builds and modern smart-home designs.
+        </p>
+        <a
+          class="reveal btn btn-dark p-3 fw-bold rounded-0 genie"
+          href="{% link _pages/about.md %}"
+          >Learn More <i class="fa fa-chevron-right"></i
+        ></a>
       </div>
     </div>
   </section>
-  <section id="projects" class="container text-center mt-5">
-    <h1 class="fw-bold">Projects</h1>
-    <div class="row mt-4">
-      <div class="col d-flex align-items-justified">
+  <section id="projects" class="container-fluid">
+    <div class="row">
+      <div class="offset-lg-2 col-lg-10 col-12">
+        {% comment %}
+        <hr
+          class="mb-5 border-5 border-secondary rounded position-absolute top-0 start-0 mt-4 w-100"
+        />
+        {% endcomment %}
+        <h1 class="reveal fw-bold">Projects</h1>
+      </div>
+      <div class="offset-lg-2 col-lg-10 col-12 p-0 position-relative mt-4">
+        <img
+          class="reveal w-100"
+          src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}"
+          alt=""
+          srcset=""
+        />
         <a
           href="{% link _projects/lavish-estates.md %}"
-          class="link-underline-opacity-0 link-dark project-card m-4 d-flex flex-column shadow-lg genie-sm"
+          class="link-underline-opacity-0"
         >
-          <div>
-            <img
-              class="project-card-image"
-              src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="project-card-description p-4 my-auto">
-            <img
-              class="mb-4"
-              src="/assets/images/lavish-estates-logo-light.png"
-              height="80px"
-            />
-            <p>
-              The harmony of innovative living through luxury, comfort, and
-              pristine quality residences in Phuket
-            </p>
-          </div>
-          <div class="btn btn-dark py-3 fw-bold rounded-0">
-            Explore <i class="fa fa-chevron-right"></i>
-          </div>
+          <img
+            class="reveal position-absolute bottom-0 start-0 bg-white m-4 p-3"
+            src="/assets/images/lavish-estates-logo-light.png"
+            height="100px"
+          />
         </a>
+      </div>
+      <div class="offset-lg-2 col-lg-6 col-12 my-5">
+        <h4>Lavish Estates</h4>
+        <p>
+          The harmony of innovative living through luxury, comfort, and pristine
+          quality residences in Phuket
+        </p>
         <a
-          href="#"
-          class="disabled link-underline-opacity-0 link-dark project-card m-4 d-flex flex-column shadow-lg"
+          href="{% link _projects/lavish-estates.md %}"
+          class="reveal btn btn-dark p-3 fw-bold rounded-0 genie"
         >
-          <div>
-            <img
-              class="project-card-image"
-              src="{{ 'assets/images/project-03.jpg' | relative_url }}"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="project-card-description p-4 my-auto">
-            <img
-              class="mb-4"
-              src="/assets/images/lavish-estates-logo-light.png"
-              height="80px"
-            />
-            <p>
-              Cornwell description Lorem ipsum dolor sit amet consectetur
-              adipisicing elit.
-            </p>
-          </div>
-          <div class="btn btn-dark py-3 fw-bold rounded-0 disabled">
-            Coming Soon
-          </div>
+          Learn More <i class="fa fa-chevron-right"></i>
+        </a>
+      </div>
+      <div class="offset-lg-2 col-lg-10 col-12 p-0 position-relative mt-4">
+        <img
+          class="reveal w-100"
+          src="{{ '/assets/images/project-03.jpg' | relative_url }}"
+          alt=""
+          srcset=""
+        />
+        <a
+          href="{% link _projects/lavish-estates.md %}"
+          class="link-underline-opacity-0"
+        >
+          <img
+            class="reveal position-absolute bottom-0 start-0 bg-white m-4 p-3"
+            src="/assets/images/lavish-estates-logo-light.png"
+            height="100px"
+          />
+        </a>
+      </div>
+      <div class="offset-lg-2 col-lg-6 col-12 my-5">
+        <h4>Cornwell</h4>
+        <p>
+          The harmony of innovative living through luxury, comfort, and pristine
+          quality residences in Phuket
+        </p>
+        <a
+          disabled
+          href="{% link _projects/lavish-estates.md %}"
+          class="reveal btn btn-dark p-3 fw-bold rounded-0 disabled"
+        >
+          Coming Soon
         </a>
       </div>
     </div>
@@ -141,12 +165,22 @@ order: 0
   <section id="awards" class="container text-center mt-5">
     <h1 class="fw-bold">Awards</h1>
     <div class="row">
-      <div class="col-6">
-        <img class="m-4" height="300" src="/assets/images/dot-award-sea-2023.svg" alt="">
+      <div class="col-12 col-md-6">
+        <img
+          class="m-4"
+          height="300"
+          src="/assets/images/dot-award-sea-2023.svg"
+          alt=""
+        />
         <p class="fw-bold">Best Innovative Developer South East Asia 2023</p>
       </div>
-      <div class="col-6">
-        <img class="m-4" height="300" src="/assets/images/dot-award-thailand-2023.svg" alt="">
+      <div class="col-12 col-md-6">
+        <img
+          class="m-4"
+          height="300"
+          src="/assets/images/dot-award-thailand-2023.svg"
+          alt=""
+        />
         <p class="fw-bold">Best Innovative Developer Thailand 2023</p>
       </div>
     </div>
@@ -292,10 +326,14 @@ order: 0
 </div>
 
 <script type="text/javascript">
+  var container = $("#hero-container")[0];
+  var target = $("#hero-target")[0];
+  var hero = $("#hero");
+  var hint = $("#hero-scroll-hint");
+  var bgTargets = $("div:has(> #hero-container)");
+
   var animateHero = function () {
     var currentScroll = $(window).scrollTop();
-    var container = $("#hero-container")[0];
-    var target = $("#hero-target")[0];
     var originalX = container.offsetLeft;
     var originalY = container.offsetTop;
     var originalWidth = container.offsetWidth;
@@ -310,8 +348,16 @@ order: 0
       1
     );
 
-    if (currentScroll > targetY) {
-      // return;
+    // if (currentScroll > targetY) {
+    //   return;
+    // }
+
+    if (currentScroll > 5) {
+      hint.addClass("opacity-0");
+      hint.addClass("disabled");
+    } else {
+      hint.removeClass("opacity-0");
+      hint.removeClass("disabled");
     }
 
     /* console.log(
@@ -334,8 +380,7 @@ order: 0
     var scaleY = 1 - (1 - targetScaleY) * stage;
     var scale = `scale(${scaleX}, ${scaleY})`;
     var translate = `translate(${stage * targetX}px, ${stage * targetY}px)`;
-
-    var hero = $("#hero");
+    bgTargets.css({ "background-color": `rgba(65,40,6,${1 - stage})` });
     hero.width(originalWidth - (originalWidth - targetWidth) * stage);
     hero.height(originalHeight - (originalHeight - targetHeight) * stage);
     hero.css({
@@ -345,7 +390,7 @@ order: 0
     // $("#landing, #hero-container").css({
     //   "filter": `invert(${stage * 100}%)`
     // })
-    console.log(translate);
+    // console.log(translate);
   };
 
   // var lastScrollTop = 0;
