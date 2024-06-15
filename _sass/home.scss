@@ -53,10 +53,11 @@
 }
 
 .lead-card {
-  min-height: 400px;
-  @include media-breakpoint-up(lg) {
-    min-height: 800px;
-  }
+//   min-height: 400px;
+//   @include media-breakpoint-up(lg) {
+//     min-height: 800px;
+//   }
+  aspect-ratio: 2;
 }
 
 .project-card {

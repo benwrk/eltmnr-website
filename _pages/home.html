@@ -9,13 +9,15 @@ order: 0
   <div id="hero-container" class="">
     <div id="hero">
       <video
-        {% comment %}
-        controls
-        {% endcomment %}
         id="hero-video"
         autoplay
-        muted
-        src="/assets/videos/hero.mp4"></video>
+        muted>
+        <source src="/assets/videos/hero.mp4" type="video/mp4">
+      </video>
+    {% comment %} <img
+                                                        id="hero-video"
+                                                        src="/assets/images/lavish-estates-exterior-01.jpg"
+                                        alt=""> {% endcomment %}
     </div>
   {% comment %}
     <div id="hero" class=""></div>
@@ -40,8 +42,8 @@ order: 0
         <h1 class="reveal" style="font-size: 40px">
           Innovative Living, Classic Luxury
         </h1>
-        <p class="reveal mt-4 mb-2 fs-md-5">
-          Register now to receive latest special privileges & exclusive project   
+        <p class="reveal mt-4 mb-2 fs-lg-5">
+          Register now to receive latest special privileges & exclusive project                                    
           information
         </p>
         <a class="reveal btn btn-secondary p-3 fw-bold rounded-0 mb-2 genie" href="{% link _pages/register.html %}">Register Now
@@ -55,11 +57,11 @@ order: 0
 </div>
       <div class="col-lg-6 offset-lg-2 col-12 d-flex flex-column align-items-start my-5">
         <h3 class="reveal">
-          To redefine innovative living through luxury, comfort, and pristine   
+          To redefine innovative living through luxury, comfort, and pristine                                    
           quality residences
         </h3>
         <p class="reveal">
-          Elite Manor is a real estate development firm that tailors to   
+          Elite Manor is a real estate development firm that tailors to                                    
           international clients who seek luxury and high-end housing in
           Thailand. Headquartered in Phuket, Thailand and focused on a target
           market of families, foreigners, and investors. We pride ourselves in
@@ -73,7 +75,7 @@ order: 0
 </div>
       <div class="col-lg-6 offset-lg-4 col-12 d-flex flex-column align-items-end my-5">
         <p class="reveal">
-          We tailor to international clients who seek luxury and high-end   
+          We tailor to international clients who seek luxury and high-end                                    
           housing in Thailand. Headquartered in Phuket, Thailand and focused on
           a target market of families, foreigners, and investors. We pride
           ourselves in our high quality builds and modern smart-home designs.
@@ -101,7 +103,7 @@ order: 0
           src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}"
           alt=""
           srcset=""
-          style="min-height: 500px; object-fit: cover; object-position: center" />
+          style="object-fit: cover; object-position: center; aspect-ratio: 4/3;" />
         <a href="{% link _projects/lavish-estates.md %}" class="link-underline-opacity-0">
           <img
             loading="lazy"
@@ -110,10 +112,10 @@ order: 0
             height="100px" />
         </a>
       </div>
-      <div class="reveal col-lg-5 col-12 my-5 p-3">
+      <div class="reveal col-lg-5 col-12 mb-5 mb-lg-0 p-4 px-lg-5 mt-lg-auto">
         <h3>Lavish Estates</h3>
         <p>
-          The harmony of innovative living through luxury, comfort, and pristine   
+          The harmony of innovative living through luxury, comfort, and pristine                                    
           quality residences in Phuket
         </p>
         <a href="{% link _projects/lavish-estates.md %}" class="btn btn-secondary p-3 fw-bold rounded-0 genie">
@@ -121,13 +123,14 @@ order: 0
           <i class="fa fa-chevron-right"></i>
         </a>
       </div>
-      <div class="reveal offset-lg-2 col-lg-10 col-12 p-0 position-relative mt-4">
+      <div class="reveal offset-lg-2 col-lg-5 col-12 p-0 position-relative mt-4">
         <img
           loading="lazy"
           class="w-100"
           src="{{ '/assets/images/project-03.jpg' | relative_url }}"
           alt=""
-          srcset="" />
+          srcset=""
+          style="aspect-ratio: 4/3;" />
         <a href="{% link _projects/lavish-estates.md %}" class="link-underline-opacity-0">
           <img
             loading="lazy"
@@ -136,10 +139,10 @@ order: 0
             height="100px" />
         </a>
       </div>
-      <div class="reveal offset-lg-2 col-lg-6 col-12 my-5">
+      <div class="reveal col-lg-5 col-12 mb-5 mb-lg-0 p-4 px-lg-5 mt-lg-auto">
         <h4>Cornwell</h4>
         <p>
-          The harmony of innovative living through luxury, comfort, and pristine   
+          The harmony of innovative living through luxury, comfort, and pristine                                    
           quality residences in Phuket
         </p>
         <a
@@ -153,10 +156,10 @@ order: 0
   </section>
   <section id="awards" class="container-fluid mt-5">
     <div class="row">
-      <div class="reveal offset-md-2 col-md-6 col-12">
+      <div class="reveal offset-lg-2 col-lg-6 col-12">
         <h1 class="fw-bold">Awards</h1>
       </div>
-      <div class="reveal offset-md-2 col-md-5 col-12 text-center">
+      <div class="reveal offset-lg-2 col-lg-5 col-12 text-center">
         <div class="w-100 p-2">
           <img
             loading="lazy"
@@ -169,7 +172,7 @@ order: 0
           </p>
         </div>
       </div>
-      <div class="reveal col-md-5 col-12 text-center">
+      <div class="reveal col-lg-5 col-12 text-center">
         <div class="w-100 p-2">
           <img
             loading="lazy"
