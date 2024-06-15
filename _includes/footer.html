@@ -1,7 +1,7 @@
 <div class="footer text-white pb-auto">
   <div class="container py-5">
     <div class="row">
-      <div class="my-lg-0 col-lg-4 my-xs-5 col-xs-12">
+      <div class="reveal my-lg-0 col-lg-4 my-xs-5 col-xs-12">
         <a href="/"
           ><img src="/assets/images/logo.png" alt="" class="genie mb-4"
         /></a>
@@ -15,7 +15,7 @@
           All rights reserved
         </p>
       </div>
-      <div class="my-lg-0 col-lg-4 my-5 col-12">
+      <div class="reveal my-lg-0 col-lg-4 my-5 col-12">
         <h5 class="m-0 mb-1 fw-bold">Pages</h5>
         {% assign pages = site.pages | reverse %} {% for page_ in pages %}
         <p
@@ -34,9 +34,9 @@
         </p>
         {% endfor %}
       </div>
-      <div class="my-lg-0 col-lg-4 my-xs-5 col-xs-12">
+      <div class="reveal my-lg-0 col-lg-4 my-xs-5 col-xs-12">
         <!-- <h5 class="fw-bold">Contact</h5> -->
-        <div class="d-flex">
+        <div class="d-flex w-100 justify-content-lg-end">
           <a
             target="_blank"
             href="tel:{{ site.telephone_number }}"

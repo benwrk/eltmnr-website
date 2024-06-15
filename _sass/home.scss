@@ -12,19 +12,30 @@
 // }
 
 #hero {
-  background: url("/assets/images/slideshow-01.jpg") center fixed no-repeat;
-  background-size: cover;
+  // background: url("/assets/images/slideshow-01.jpg") center fixed no-repeat;
+  // background-size: cover;
   position: absolute;
   width: 100%;
   height: 100%;
   transform-origin: top left;
   transform: matrix(1, 0, 0, 1, 0, 0);
   z-index: 1;
+  overflow: hidden;
+  // display: flex;
+  // justify-content: stretch;
+  // align-items: stretch;
+  // text-align: center;
 }
 
-// #hero-target {
-//   background: transparent;
-// }
+#hero-video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
 
 #landing {
   margin-top: 200px;
@@ -55,10 +66,10 @@
 }
 
 // body, html {
-  // max-height: 100vh;
-  // overflow-y: scroll;
-  // scrollbar-width: 0;
-  // scroll-snap-type: y mandatory;
+// max-height: 100vh;
+// overflow-y: scroll;
+// scrollbar-width: 0;
+// scroll-snap-type: y mandatory;
 // }
 
 // #hero-container, #home-content-container {
