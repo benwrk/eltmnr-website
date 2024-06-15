@@ -8,19 +8,27 @@ order: 0
 <div class="container-fluid p-0">
   <div id="hero-container" class="">
     <div id="hero">
-      <video id="hero-video" autoplay muted src="/assets/videos/hero.mp4"></video>
+      <video
+        {% comment %}
+        controls
+        {% endcomment %}
+        id="hero-video"
+        autoplay
+        muted
+        src="/assets/videos/hero.mp4"></video>
     </div>
-    {% comment %}
+  {% comment %}
     <div id="hero" class=""></div>
-    {% endcomment %}
+  {% endcomment %}
   </div>
   <a
     id="hero-scroll-hint"
     href="#landing"
-    class="btn btn-secondary bg-transparent border-0 rounded-0 w-100 text-center fs-4 d-flex align-items-center justify-content-center"
-  >
+    class="btn btn-secondary bg-transparent border-0 rounded-0 w-100 text-center fs-4 d-flex align-items-center justify-content-center">
     {% comment %} <i class="fa fa-chevron-down"></i> {% endcomment %}
-    <span>Explore <i class="fa fa-chevron-down"></i></span>
+    <span>Explore
+      <i class="fa fa-chevron-down"></i>
+    </span>
   </a>
   <section id="landing" class="container-fluid py-5 m-0">
     <div class="row">
@@ -33,58 +41,46 @@ order: 0
           Innovative Living, Classic Luxury
         </h1>
         <p class="reveal mt-4 mb-2 fs-md-5">
-          Register now to receive latest special privileges & exclusive project
+          Register now to receive latest special privileges & exclusive project   
           information
         </p>
-        <a
-          class="reveal btn btn-secondary p-3 fw-bold rounded-0 mb-2 genie"
-          href="{% link _pages/register.html %}"
-          >Register Now <i class="fa fa-chevron-right"></i
-        ></a>
+        <a class="reveal btn btn-secondary p-3 fw-bold rounded-0 mb-2 genie" href="{% link _pages/register.html %}">Register Now
+          <i class="fa fa-chevron-right"></i>
+        </a>
       </div>
-      <div
-        class="col-lg-10 offset-lg-2 col-12 p-0 me-5 lead-card reveal"
-        style="
+      <div class="col-lg-10 offset-lg-2 col-12 p-0 me-5 lead-card reveal" style="
           background: url('/assets/images/slideshow-03.jpg') center no-repeat;
           background-size: cover;
-        "
-      ></div>
-      <div
-        class="col-lg-6 offset-lg-2 col-12 d-flex flex-column align-items-start my-5"
-      >
+        ">
+</div>
+      <div class="col-lg-6 offset-lg-2 col-12 d-flex flex-column align-items-start my-5">
         <h3 class="reveal">
-          To redefine innovative living through luxury, comfort, and pristine
+          To redefine innovative living through luxury, comfort, and pristine   
           quality residences
         </h3>
         <p class="reveal">
-          Elite Manor is a real estate development firm that tailors to
+          Elite Manor is a real estate development firm that tailors to   
           international clients who seek luxury and high-end housing in
           Thailand. Headquartered in Phuket, Thailand and focused on a target
           market of families, foreigners, and investors. We pride ourselves in
           our high quality builds and modern smart-home designs.
         </p>
       </div>
-      <div
-        class="col-lg-10 col-12 p-0 me-5 lead-card reveal"
-        style="
+      <div class="col-lg-10 col-12 p-0 me-5 lead-card reveal" style="
           background: url('/assets/images/slideshow-05.jpg') center no-repeat;
           background-size: cover;
-        "
-      ></div>
-      <div
-        class="col-lg-6 offset-lg-4 col-12 d-flex flex-column align-items-end my-5"
-      >
+        ">
+</div>
+      <div class="col-lg-6 offset-lg-4 col-12 d-flex flex-column align-items-end my-5">
         <p class="reveal">
-          We tailor to international clients who seek luxury and high-end
+          We tailor to international clients who seek luxury and high-end   
           housing in Thailand. Headquartered in Phuket, Thailand and focused on
           a target market of families, foreigners, and investors. We pride
           ourselves in our high quality builds and modern smart-home designs.
         </p>
-        <a
-          class="reveal btn btn-secondary p-3 fw-bold rounded-0 genie"
-          href="{% link _pages/about.md %}"
-          >Learn More <i class="fa fa-chevron-right"></i
-        ></a>
+        <a class="reveal btn btn-secondary p-3 fw-bold rounded-0 genie" href="{% link _pages/about.md %}">Learn More
+          <i class="fa fa-chevron-right"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -92,81 +88,64 @@ order: 0
     <div class="row">
       <div class="offset-lg-2 col-lg-10 col-12">
         {% comment %}
-        <hr
+          <hr
           class="mb-5 border-5 border-secondary rounded position-absolute top-0 start-0 mt-4 w-100"
-        />
+          />
         {% endcomment %}
         <h1 class="reveal fw-bold">Projects</h1>
       </div>
-      <div
-        class="reveal offset-lg-2 col-lg-5 col-12 p-0 position-relative mt-4"
-      >
+      <div class="reveal offset-lg-2 col-lg-5 col-12 p-0 position-relative mt-4">
         <img
           loading="lazy"
           class="w-100"
           src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}"
           alt=""
           srcset=""
-          style="min-height: 500px; object-fit: cover; object-position: center"
-        />
-        <a
-          href="{% link _projects/lavish-estates.md %}"
-          class="link-underline-opacity-0"
-        >
+          style="min-height: 500px; object-fit: cover; object-position: center" />
+        <a href="{% link _projects/lavish-estates.md %}" class="link-underline-opacity-0">
           <img
             loading="lazy"
             class="position-absolute bottom-0 start-0 bg-white m-4 p-3"
             src="/assets/images/lavish-estates-logo-light.png"
-            height="100px"
-          />
+            height="100px" />
         </a>
       </div>
       <div class="reveal col-lg-5 col-12 my-5 p-3">
         <h3>Lavish Estates</h3>
         <p>
-          The harmony of innovative living through luxury, comfort, and pristine
+          The harmony of innovative living through luxury, comfort, and pristine   
           quality residences in Phuket
         </p>
-        <a
-          href="{% link _projects/lavish-estates.md %}"
-          class="btn btn-secondary p-3 fw-bold rounded-0 genie"
-        >
-          Learn More <i class="fa fa-chevron-right"></i>
+        <a href="{% link _projects/lavish-estates.md %}" class="btn btn-secondary p-3 fw-bold rounded-0 genie">
+          Learn More
+          <i class="fa fa-chevron-right"></i>
         </a>
       </div>
-      <div
-        class="reveal offset-lg-2 col-lg-10 col-12 p-0 position-relative mt-4"
-      >
+      <div class="reveal offset-lg-2 col-lg-10 col-12 p-0 position-relative mt-4">
         <img
           loading="lazy"
           class="w-100"
           src="{{ '/assets/images/project-03.jpg' | relative_url }}"
           alt=""
-          srcset=""
-        />
-        <a
-          href="{% link _projects/lavish-estates.md %}"
-          class="link-underline-opacity-0"
-        >
+          srcset="" />
+        <a href="{% link _projects/lavish-estates.md %}" class="link-underline-opacity-0">
           <img
             loading="lazy"
             class="position-absolute bottom-0 start-0 bg-white m-4 p-3"
             src="/assets/images/lavish-estates-logo-light.png"
-            height="100px"
-          />
+            height="100px" />
         </a>
       </div>
       <div class="reveal offset-lg-2 col-lg-6 col-12 my-5">
         <h4>Cornwell</h4>
         <p>
-          The harmony of innovative living through luxury, comfort, and pristine
+          The harmony of innovative living through luxury, comfort, and pristine   
           quality residences in Phuket
         </p>
         <a
           disabled
           href="{% link _projects/lavish-estates.md %}"
-          class="btn btn-secondary p-3 fw-bold rounded-0 disabled"
-        >
+          class="btn btn-secondary p-3 fw-bold rounded-0 disabled">
           Coming Soon
         </a>
       </div>
@@ -184,8 +163,7 @@ order: 0
             class="my-4"
             height="300"
             src="/assets/images/dot-award-sea-2023.svg"
-            alt=""
-          />
+            alt="" />
           <p class="fw-semibold">
             Best Innovative Developer South East Asia 2023
           </p>
@@ -198,8 +176,7 @@ order: 0
             class="my-4"
             height="300"
             src="/assets/images/dot-award-thailand-2023.svg"
-            alt=""
-          />
+            alt="" />
           <p class="fw-semibold">Best Innovative Developer Thailand 2023</p>
         </div>
       </div>
@@ -219,8 +196,8 @@ order: 0
         margin-bottom: -7px;
         filter: sepia(0.2) saturate(1.25) grayscale(0.2);
         min-height: 600px;
-      "
-    ></iframe>
+      ">
+</iframe>
   </div>
 </div>
 
