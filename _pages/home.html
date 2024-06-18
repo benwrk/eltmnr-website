@@ -17,9 +17,9 @@ order: 0
         <source src="/assets/videos/hero.mp4" type="video/mp4">
       </video>
     {% comment %} <img
-                    id="hero-video"
-                    src="/assets/images/lavish-estates-exterior-01.jpg"
-                alt=""> {% endcomment %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  id="hero-video"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  src="/assets/images/lavish-estates-exterior-01.jpg"
+                                                                                                                                                                                                                                                                                                                                                                                                                                            alt=""> {% endcomment %}
     </div>
   {% comment %}
     <div id="hero" class=""></div>
@@ -27,7 +27,7 @@ order: 0
   </div>
   <a
     id="hero-scroll-hint"
-    href="#landing"
+    href="#em"
     class="btn btn-secondary bg-transparent border-0 rounded-0 w-100 text-center fs-4 d-flex align-items-center justify-content-center">
     {% comment %} <i class="fa fa-chevron-down"></i> {% endcomment %}
     <span>Explore
@@ -38,51 +38,68 @@ order: 0
     <div class="row">
       <div id="hero-target" class="col-lg-10 col-12 p-0 lead-card"></div>
     </div>
-    <div class="row">
+    <div id="em" class="row pt-5">
       <div class="col-lg-10 col-12 d-flex flex-column align-items-end my-5">
-        <h1 class="reveal" style="font-size: 96px">Elite Manor</h1>
-        <h1 class="reveal" style="font-size: 40px">
-          Innovative Living, Classic Luxury
+        <h1 class="reveal fw-bold" style="font-size: 96px">Elite Manor</h1>
+        {% comment %} <div class="position-relative"> {% endcomment %}
+        {% comment %} <div class=""> {% endcomment %}
+        <h1 class="reveal-500 text-uppercase fw-semibold " style="font-size: 80px; z-index: -1; margin-right: 120px; color: #00000030">
+          Innovative
         </h1>
-        <p class="reveal mt-4 mb-2 fs-lg-5">
-          Register now to receive latest special privileges & exclusive project                                                     
+        {% comment %} </div> {% endcomment %}
+        {% comment %} <div class="position-absolute"> {% endcomment %}
+        <h1 class="reveal-700 text-uppercase fw-medium text-secondary" style="font-size: 50px; margin-top: -75px; z-index: 1">
+          Living
+        </h1>
+        <h1 class="reveal-500 text-uppercase fw-semibold " style="font-size: 80px; z-index: -1; margin-right: 160px; color: #00000030">
+          Classic
+        </h1>
+        {% comment %} </div> {% endcomment %}
+        {% comment %} <div class="position-absolute"> {% endcomment %}
+        <h1 class="reveal-700 text-uppercase fw-medium text-secondary" style="font-size: 50px; margin-top: -75px; z-index: 1">
+          Luxury
+        </h1>
+        {% comment %} </div> {% endcomment %}
+        {% comment %} </div> {% endcomment %}
+        <p class="mt-4 mb-2 fs-lg-5">
+          Register now to receive latest special privileges & exclusive project                                                                                                                                                                                                            
           information
         </p>
-        <a class="reveal btn btn-secondary p-3 fw-bold rounded-0 mb-2 genie" href="{% link _pages/register.html %}">Register Now
+        <a class="btn btn-secondary p-3 fw-bold rounded-0 my-4 genie" href="{% link _pages/register.html %}">Register Now
           <i class="fa fa-chevron-right"></i>
         </a>
       </div>
-      <div class="col-lg-10 offset-lg-2 col-12 p-0 me-5 lead-card reveal" style="
+      <div class="col-lg-10 offset-lg-2 col-12 p-0 me-5 lead-card" style="
           background: url('/assets/images/slideshow-03.jpg') center no-repeat;
           background-size: cover;
         ">
 </div>
-      <div class="col-lg-6 offset-lg-2 col-12 d-flex flex-column align-items-start my-5">
-        <h3 class="reveal">
-          To redefine innovative living through luxury, comfort, and pristine                                                     
+      <div class="reveal col-lg-6 offset-lg-2 col-12 d-flex flex-column align-items-start my-5">
+        <h3 class="">
+          To redefine innovative living through luxury, comfort, and pristine                                                                                                                                                                                                            
           quality residences
         </h3>
-        <p class="reveal">
-          Elite Manor is a real estate development firm that tailors to                                                     
+        <p class="mt-2">
+          Elite Manor is a real estate development firm that tailors to                                                                                                                                                                                                            
           international clients who seek luxury and high-end housing in
           Thailand. Headquartered in Phuket, Thailand and focused on a target
           market of families, foreigners, and investors. We pride ourselves in
           our high quality builds and modern smart-home designs.
         </p>
       </div>
-      <div class="col-lg-10 col-12 p-0 me-5 lead-card reveal" style="
+      <div class="col-lg-10 col-12 p-0 me-5 lead-card" style="
           background: url('/assets/images/slideshow-05.jpg') center no-repeat;
           background-size: cover;
         ">
 </div>
-      <div class="col-lg-6 offset-lg-4 col-12 d-flex flex-column align-items-end my-5">
-        <p class="reveal">
-          We tailor to international clients who seek luxury and high-end                                                     
+      <div class="reveal col-lg-6 offset-lg-4 col-12 d-flex flex-column align-items-end my-5">
+        <p class="">
+          We tailor to international clients who seek luxury and high-end                                                                                                                                                                                                            
           housing in Thailand. Headquartered in Phuket, Thailand and focused on
           a target market of families, foreigners, and investors. We pride
           ourselves in our high quality builds and modern smart-home designs.
         </p>
-        <a class="reveal btn btn-secondary p-3 fw-bold rounded-0 genie" href="{% link _pages/about.md %}">Learn More
+        <a class="btn btn-secondary p-3 fw-bold rounded-0 genie" href="{% link _pages/about.md %}">Learn More
           <i class="fa fa-chevron-right"></i>
         </a>
       </div>
@@ -117,7 +134,7 @@ order: 0
       <div class="reveal col-lg-5 col-12 mb-5 mb-lg-0 p-4 px-lg-5 mt-lg-auto">
         <h3>Lavish Estates</h3>
         <p>
-          The harmony of innovative living through luxury, comfort, and pristine                                                     
+          The harmony of innovative living through luxury, comfort, and pristine                                                                                                                                                                                                            
           quality residences in Phuket
         </p>
         <a href="{% link _projects/lavish-estates.md %}" class="btn btn-secondary p-3 fw-bold rounded-0 genie">
@@ -144,7 +161,7 @@ order: 0
       <div class="reveal col-lg-5 col-12 mb-5 mb-lg-0 p-4 px-lg-5 mt-lg-auto">
         <h4>Cornwell</h4>
         <p>
-          The harmony of innovative living through luxury, comfort, and pristine                                                     
+          The harmony of innovative living through luxury, comfort, and pristine                                                                                                                                                                                                            
           quality residences in Phuket
         </p>
         <a
@@ -213,8 +230,14 @@ order: 0
   var hint = $("#hero-scroll-hint");
   var bgTargets = $("div:has(> #hero-container)");
   var brandImage = $(".brand-image");
+  var webkitScrollBar = $("::-webkit-scrollbar");
 
+  var scrolling = false;
   var animateHero = function () {
+    if (!scrolling) {
+      return;
+    }
+    scrolling = false;
     var currentScroll = $(window).scrollTop();
     var originalX = container.offsetLeft;
     var originalY = container.offsetTop;
@@ -237,7 +260,7 @@ order: 0
     if (currentScroll > 5) {
       hint.addClass("opacity-0");
       hint.addClass("disabled");
-      brandImage.css({ filter: "" });
+      brandImage.css({ filter: "none" });
     } else {
       hint.removeClass("opacity-0");
       hint.removeClass("disabled");
@@ -276,8 +299,35 @@ order: 0
     });
   };
 
+  var stickyScroll = function() {
+    
+  }
+
+  // var scrolling = false;
+  // var handleScrollInterval;
+  // var handleScroll = function() {
+  //   if (scrolling) {
+  //       scrolling = false;
+
+  //       animateHero();
+  //       // place the scroll handling logic here
+  //   }
+  // }
+
+  $(document).scroll(function() {
+    scrolling = true;
+    // if (handleScrollInterval) {
+    //   clearTimeout(handleScrollInterval);
+    // }
+    // handleScrollInterval = setTimeout(handleScroll, 240 / 1000);
+    // handleScroll();
+  });
+
+  setInterval(animateHero, 1000 / 60);
+
   $(document).ready(animateHero);
-  $(document).scroll(animateHero);
+  // $(document).scroll(animateHero);
+  // $(document).scroll()
   // $(window).scroll(heroScroll);
   $(window).resize(animateHero);
 </script>
