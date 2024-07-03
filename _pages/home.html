@@ -40,7 +40,7 @@ order: 0
                                                                                                                                                                                                 </div> {% endcomment %}
     <div id="em" class="row pt-5 mt-5">
       <div class="col-lg-8 px-3 col-12 d-flex flex-column align-items-end my-5 order-1 order-lg-0">
-        <h1 class="reveal-500 fw-bold text-primary" style="font-size: 96px">Elite Manor</h1>
+        <h1 class="reveal-500 text-uppercase fw-bold text-primary" style="font-size: 96px">Elite Manor</h1>
         {% comment %} <div class="position-relative"> {% endcomment %}
         {% comment %} <div class=""> {% endcomment %}
         <h1 class="reveal-500 text-uppercase fw-semibold " style="font-size: 80px; z-index: -1; margin-right: 120px; color: #00000030">
@@ -119,106 +119,132 @@ order: 0
     </div>
   </section>
   <section id="projects" class="container-fluid">
-    <div class="row">
-      <div class="offset-lg-2 col-lg-10 col-12">
+    <div class="row bg-dark py-5 text-light">
+      <div class="col-12 text-center">
         {% comment %}
           <hr
           class="mb-5 border-5 border-secondary rounded position-absolute top-0 start-0 mt-4 w-100"
           />
         {% endcomment %}
-        <h1 class="reveal fw-bold">Projects</h1>
+        <h1 class="reveal fw-bold text-uppercase text-primary">Our projects</h1>
       </div>
-      <div class="reveal offset-lg-2 col-lg-5 col-12 p-0 position-relative mt-4">
+      <div class="reveal col-12 col-lg-6 p-5 d-flex flex-column align-items-center text-center">
         <img
           loading="lazy"
-          class="w-100 object-fit-cover"
+          class="w-100 object-fit-cover shadow-lg"
           src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}"
           alt=""
           srcset=""
-          style="object-fit: cover; object-position: center; aspect-ratio: 4/3;" />
-        <a href="{% link _projects/lavish-estates.md %}" class="link-underline-opacity-0">
-          <img
-            loading="lazy"
-            class="position-absolute bottom-0 start-0 bg-white m-4 p-3"
-            src="/assets/images/lavish-estates-logo-light.png"
-            height="100px" />
-        </a>
-      </div>
-      <div class="reveal col-lg-5 col-12 mb-5 mb-lg-0 p-4 px-lg-5 mt-lg-auto">
-        <h3>Lavish Estates</h3>
-        <p>
+          style="object-fit: cover; object-position: center; aspect-ratio: 1;" />
+        <img
+          loading="lazy"
+          class="my-5"
+          src="/assets/images/lavish-estates-logo-light.png"
+          height="100px" />
+        <p class="px-5 mb-5">
           The harmony of innovative living through luxury, comfort, and pristine                                                                                                                                                                                                                                                                              
           quality residences in Phuket
         </p>
-        <a href="{% link _projects/lavish-estates.md %}" class="btn btn-secondary p-3 fw-bold rounded-0 genie">
-          Learn More
+        <a href="{% link _projects/lavish-estates.md %}" class="btn btn-primary text-uppercase text-light p-3 fw-bold rounded-0 genie">
+          See More
           <i class="fa fa-chevron-right"></i>
         </a>
       </div>
-      <div class="reveal offset-lg-2 col-lg-5 col-12 p-0 position-relative mt-4">
+      <div class="reveal col-12 col-lg-6 p-5 d-flex flex-column align-items-center text-center">
         <img
           loading="lazy"
-          class="w-100 object-fit-cover"
+          class="w-100 object-fit-cover shadow-lg"
           src="{{ '/assets/images/project-03.jpg' | relative_url }}"
           alt=""
           srcset=""
-          style="aspect-ratio: 4/3;" />
-        <a href="{% link _projects/lavish-estates.md %}" class="link-underline-opacity-0">
-          <img
-            loading="lazy"
-            class="position-absolute bottom-0 start-0 bg-white m-4 p-3"
-            src="/assets/images/lavish-estates-logo-light.png"
-            height="100px" />
-        </a>
-      </div>
-      <div class="reveal col-lg-5 col-12 mb-5 mb-lg-0 p-4 px-lg-5 mt-lg-auto">
-        <h4>Cornwell</h4>
-        <p>
+          style="object-fit: cover; object-position: center; aspect-ratio: 1;" />
+        <p class="my-5" style="height: 100px;">
+          Cornwell<br>Logo<br>Holder
+        </p>
+        <p class="px-5 mb-5">
           The harmony of innovative living through luxury, comfort, and pristine                                                                                                                                                                                                                                                                              
           quality residences in Phuket
         </p>
         <a
           disabled
           href="{% link _projects/lavish-estates.md %}"
-          class="btn btn-secondary p-3 fw-bold rounded-0 disabled">
+          class="btn btn-primary text-uppercase text-light p-3 fw-bold rounded-0 disabled">
           Coming Soon
         </a>
       </div>
     </div>
   </section>
-  <section id="awards" class="container-fluid mt-5">
-    <div class="row">
-      <div class="reveal offset-lg-2 col-lg-6 col-12">
-        <h1 class="fw-bold">Awards</h1>
+  <section id="faq-and-awards" class="container-fluid">
+    <div class="row p-0">
+      <div class="reveal col-12 col-lg-6 p-5" style="background-color: #ded8cd;">
+        <h1 class="fw-bold text-uppercase text-primary text-center mb-5">FAQs</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis itaque nisi pariatur nulla. 
+        </p>
+        <hr>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis itaque nisi pariatur nulla. 
+        </p>
+        <hr>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis itaque nisi pariatur nulla. 
+        </p>
+        <hr>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis itaque nisi pariatur nulla. 
+        </p>
+        <hr>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis itaque nisi pariatur nulla. 
+        </p>
+        <hr>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis itaque nisi pariatur nulla. 
+        </p>
+        <hr>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis itaque nisi pariatur nulla. 
+        </p>
+        <hr>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis itaque nisi pariatur nulla. 
+        </p>
+        <hr>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis itaque nisi pariatur nulla. 
+        </p>
       </div>
-      <div class="reveal offset-lg-2 col-lg-5 col-12 text-center">
-        <div class="w-100 p-2">
-          <img
-            loading="lazy"
-            class="my-4"
-            height="300"
-            src="/assets/images/dot-award-sea-2023.svg"
-            alt="" />
-          <p class="fw-semibold">
-            Best Innovative Developer South East Asia 2023
-          </p>
-        </div>
-      </div>
-      <div class="reveal col-lg-5 col-12 text-center">
-        <div class="w-100 p-2">
-          <img
-            loading="lazy"
-            class="my-4"
-            height="300"
-            src="/assets/images/dot-award-thailand-2023.svg"
-            alt="" />
-          <p class="fw-semibold">Best Innovative Developer Thailand 2023</p>
+      <div class="reveal col-12 col-lg-6 pt-5">
+        <h1 class="fw-bold text-uppercase text-primary text-center">Awards</h1>
+        <div class="row my-5">
+          <div class="col-12 px-5 d-flex flex-row">
+            <img
+              loading="lazy"
+              class="mx-5"
+              height="200"
+              src="/assets/images/dot-award-sea-2023.svg"
+              alt="" />
+            <p class="fw-semibold text-uppercase text-black-50">
+              Best Innovative Developer South East Asia 2023
+            </p>
+          </div>
+          <div class="col-12 p-5 d-flex flex-row">
+            <img
+              loading="lazy"
+              class="mx-5"
+              height="200"
+              src="/assets/images/dot-award-thailand-2023.svg"
+              alt="" />
+            <p class="fw-semibold text-uppercase text-black-50">
+              Best Innovative Developer Phuket 2023
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="reveal container-fluid shadow-lg p-0 mt-5">
+  <div class="reveal container-fluid shadow-lg p-0">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15810.110005276163!2d98.3336935!3d7.8397258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30502f8b828258dd%3A0x65e112219235d17f!2sLavish%20Estates%20by%20Elite%20Manor!5e0!3m2!1sen!2sth!4v1716525107023!5m2!1sen!2sth"
       width="100%"
