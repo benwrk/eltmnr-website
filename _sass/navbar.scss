@@ -67,11 +67,15 @@ $brand-image-height: 50px;
 
 .navbar-at-top .brand-image {
   height: 1.25 * $brand-image-height;
-  // filter: invert(1);
+  filter: invert(1);
 }
 
 .navbar-at-top .navbar-toggler {
-  background-color: white;
+  background-color: transparent;
+}
+
+.navbar-at-top .icon-bar {
+  background-color: white !important;
 }
 
 // Navbar toggler button state transition animation

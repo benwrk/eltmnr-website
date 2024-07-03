@@ -105,7 +105,7 @@ order: 0
   </section>
   <section id="projects" class="container-fluid">
     <div class="row bg-dark text-light">
-      <div class="bg-white position-absolute h-25 z-0 d-none d-lg-block"></div>
+      <div class="bg-white position-absolute h-25 w-100vw z-0 d-none d-lg-block"></div>
       <div class="pt-5 z-1 col-12 text-center">
         {% comment %}
           <hr
@@ -114,49 +114,53 @@ order: 0
         {% endcomment %}
         <h1 class="reveal fw-bold text-uppercase text-primary">Our projects</h1>
       </div>
-      <div class="mb-5 z-1 reveal col-12 col-lg-6 p-5 d-flex flex-column align-items-center text-center">
-        <img
-          loading="lazy"
-          class="w-100 object-fit-cover shadow-lg"
-          src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}"
-          alt=""
-          srcset=""
-          style="object-fit: cover; object-position: center; aspect-ratio: 1;" />
-        <img
-          loading="lazy"
-          class="my-5"
-          src="/assets/images/lavish-estates-logo-light.png"
-          height="100px" />
-        <p class="px-5 mb-5">
-          The harmony of innovative living through luxury, comfort, and pristine                                                                                                                                                                                                                                                                              
-          quality residences in Phuket
-        </p>
-        <a href="{% link _projects/lavish-estates.md %}" class="btn btn-primary text-uppercase text-light p-3 fw-bold rounded-0 genie">
-          See More
-          <i class="fa fa-chevron-right"></i>
-        </a>
-      </div>
-      <div class="mb-5 z-1 reveal col-12 col-lg-6 p-5 d-flex flex-column align-items-center text-center">
-        <img
-          loading="lazy"
-          class="w-100 object-fit-cover shadow-lg"
-          src="{{ '/assets/images/project-03.jpg' | relative_url }}"
-          alt=""
-          srcset=""
-          style="object-fit: cover; object-position: center; aspect-ratio: 1;" />
-        <p class="my-5" style="height: 100px;">
-          Cornwell<br>Logo<br>Holder
-        </p>
-        <p class="px-5 mb-5">
-          The harmony of innovative living through luxury, comfort, and pristine                                                                                                                                                                                                                                                                              
-          quality residences in Phuket
-        </p>
-        <a
-          disabled
-          href="{% link _projects/lavish-estates.md %}"
-          class="btn btn-primary text-uppercase text-light p-3 fw-bold rounded-0 disabled">
-          Coming Soon
-        </a>
+      <div class="col-12 container px-lg-5">
+        <div class="row px-lg-5 mx-lg-5">
+          <div class="mb-5 z-1 reveal col-12 col-lg-6 p-5 d-flex flex-column align-items-center text-center">
+            <img
+              loading="lazy"
+              class="w-100 object-fit-cover shadow-lg"
+              src="{{ '/assets/images/slideshow-02.jpg' | relative_url }}"
+              alt=""
+              srcset=""
+              style="object-fit: cover; object-position: center; aspect-ratio: 1;" />
+            <img
+              loading="lazy"
+              class="my-5"
+              src="/assets/images/lavish-estates-logo-light.png"
+              height="100px" />
+            <p class="px-5 mb-5">
+              The harmony of innovative living through luxury, comfort, and pristine
+              quality residences in Phuket
+            </p>
+            <a href="{% link _projects/lavish-estates.md %}" class="btn btn-primary text-uppercase text-light p-3 fw-bold rounded-0 genie">
+              See More
+              <i class="fa fa-chevron-right"></i>
+            </a>
+          </div>
+          <div class="mb-5 z-1 reveal col-12 col-lg-6 p-5 d-flex flex-column align-items-center text-center">
+            <img
+              loading="lazy"
+              class="w-100 object-fit-cover shadow-lg"
+              src="{{ '/assets/images/project-03.jpg' | relative_url }}"
+              alt=""
+              srcset=""
+              style="object-fit: cover; object-position: center; aspect-ratio: 1;" />
+            <p class="my-5" style="height: 100px;">
+              Cornwell<br>Logo<br>Holder
+            </p>
+            <p class="px-5 mb-5">
+              The harmony of innovative living through luxury, comfort, and pristine
+              quality residences in Phuket
+            </p>
+            <a
+              disabled
+              href="{% link _projects/lavish-estates.md %}"
+              class="btn btn-primary text-uppercase text-light p-3 fw-bold rounded-0 disabled">
+              Coming Soon
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -254,7 +258,7 @@ order: 0
   var hero = $("#hero");
   var hint = $("#hero-scroll-hint");
   var bgTargets = $("div:has(> #hero-container)");
-  var brandImage = $(".brand-image");
+  // var brandImage = $(".brand-image");
   var webkitScrollBar = $("::-webkit-scrollbar");
 
   var scrolling = false;
@@ -285,11 +289,11 @@ order: 0
     if (currentScroll > 5) {
       hint.addClass("opacity-0");
       hint.addClass("disabled");
-      brandImage.css({ filter: "none" });
+      // brandImage.css({ filter: "none" });
     } else {
       hint.removeClass("opacity-0");
       hint.removeClass("disabled");
-      brandImage.css({ filter: "invert(1)" });
+      // brandImage.css({ filter: "invert(1)" });
     }
 
     /* console.log(
