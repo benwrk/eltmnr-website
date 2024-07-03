@@ -7,8 +7,7 @@
       data-bs-target="#navbarToggler"
       aria-controls="navbarToggler"
       aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+      aria-label="Toggle navigation">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -18,8 +17,7 @@
         class="brand-image"
         loading="lazy"
         src="{{ 'assets/images/logo-light.png' | relative_url }}"
-        alt="Elite Manor Logo"
-      />
+        alt="Elite Manor Logo" />
     </a>
     <button
       class="navbar-toggler rounded-0 p-3 genie invisible d-xs-none"
@@ -28,8 +26,7 @@
       data-bs-target="#navbarToggler"
       aria-controls="navbarToggler"
       aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+      aria-label="Toggle navigation">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -39,35 +36,30 @@
         <li class="nav-item">
           <a class="nav-link border-0 mt-4 mb-0 fs-5">Projects</a>
         </li>
-        {% assign pages = site.projects | reverse %} {% for page_ in pages %}
-        <li
-          class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}"
-        >
-          <a
-            class="pt-0 mb-0 nav-link fw-medium origin-left genie-lg"
-            href="{{ page_.url }}"
-          >
-            <!-- <i class="fa fa-location-dot"></i> -->
-            {{ page_.title }} {% if page.url == page_.url %}
-            <span class="sr-only">(current)</span>{% endif %}
-          </a>
-        </li>
+        {% assign pages = site.projects | reverse %}
+        {% for page_ in pages %}
+          <li class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}">
+            <a class="pt-0 mb-0 nav-link fw-medium origin-left genie-lg" href="{{ page_.url }}">
+              <!-- <i class="fa fa-location-dot"></i> -->
+              {{ page_.title }}
+              {% if page.url == page_.url %}
+                <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
         {% endfor %}
         <li class="nav-item">
           <a class="nav-link border-0 mt-4 mb-0 fs-5">Pages</a>
         </li>
-        {% assign pages = site.pages | reverse %} {% for page_ in pages %}
-        <li
-          class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}"
-        >
-          <a
-            class="pt-0 mb-0 nav-link fw-medium origin-left genie-lg"
-            href="{{ page_.url }}"
-          >
-            {{ page_.title }}{% if page.url == page_.url %}
-            <span class="sr-only">(current)</span>{% endif %}
-          </a>
-        </li>
+        {% assign pages = site.pages | reverse %}
+        {% for page_ in pages %}
+          <li class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}">
+            <a class="pt-0 mb-0 nav-link fw-medium origin-left genie-lg" href="{{ page_.url }}">
+              {{ page_.title }}{% if page.url == page_.url %}
+                <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
         {% endfor %}
       </ul>
     </div>
