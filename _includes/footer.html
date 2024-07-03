@@ -1,21 +1,16 @@
 <div class="footer text-white pb-auto">
   <div class="container py-5">
     <div class="row">
-      <div class="reveal my-lg-0 col-lg-4 my-xs-5 col-xs-12">
+      <div class="reveal my-lg-0 col-lg-3 my-3 col-12">
         <a href="/"
-          ><img src="/assets/images/logo.png" alt="" class="genie mb-4"
+          ><img
+            src="/assets/images/logo.png"
+            width="160px"
+            alt=""
+            class="genie mb-4"
         /></a>
-        <h5 class="fw-bold">Elite Manor Co., Ltd.</h5>
-        <p>5/203 Moo 4, Cherngtalay,<br />Thalang, Phuket 83110</p>
-        <p>
-          <span class="fw-bold">
-            &copy;
-            <!-- {{ page.date | date: "%Y" }} -->
-          </span>
-          All rights reserved
-        </p>
       </div>
-      <div class="reveal my-lg-0 col-lg-4 my-5 col-12">
+      <div class="reveal my-lg-0 col-lg-3 my-3 col-12">
         <h5 class="m-0 mb-1 fw-bold">Pages</h5>
         {% assign pages = site.pages | reverse %} {% for page_ in pages %}
         <p
@@ -24,17 +19,23 @@
           <a href="{{ page_.url | relative_url }}">{{ page_.title }}</a>
         </p>
         {% endfor %}
-        <br>
+        <br />
         <h5 class="m-0 mb-1 fw-bold">Projects</h5>
         {% assign pages = site.projects | reverse %} {% for page_ in pages %}
         <p
-        class="m-0 {% unless page_.navbar_display %} d-none disabled{% endunless %}"
+          class="m-0 {% unless page_.navbar_display %} d-none disabled{% endunless %}"
         >
-          <a href="{{ page_.url | relative_url }}"><i class="fa fa-location-dot"></i> {{ page_.title }}</a>
+          <a href="{{ page_.url | relative_url }}"
+            ><i class="fa fa-location-dot"></i> {{ page_.title }}</a
+          >
         </p>
         {% endfor %}
       </div>
-      <div class="reveal my-lg-0 col-lg-4 my-xs-5 col-xs-12">
+      <div class="reveal my-lg-0 col-lg-3 my-3 col-12">
+        <h5 class="fw-bold">Elite Manor Co., Ltd.</h5>
+        <p>5/203 Moo 4, Cherngtalay,<br />Thalang, Phuket 83110</p>
+      </div>
+      <div class="reveal my-lg-0 col-lg-3 my-3 col-12">
         <!-- <h5 class="fw-bold">Contact</h5> -->
         <div class="d-flex w-100 justify-content-lg-end">
           <a
@@ -43,7 +44,10 @@
             class="genie-lg me-3"
             ><i class="fa fa-2x fa-square-phone"></i
           ></a>
-          <a target="_blank" href="mailto:{{ site.email }}" class="genie-lg me-3"
+          <a
+            target="_blank"
+            href="mailto:{{ site.email }}"
+            class="genie-lg me-3"
             ><i class="fa fa-2x fa-square-envelope"></i
           ></a>
           <a
@@ -67,6 +71,15 @@
             ><i class="fa-brands fa-2x fa-square-youtube"></i
           ></a>
         </div>
+      </div>
+      <div class="col-12 text-center mt-5">
+        <p>
+          <span class="fw-bold">
+            &copy;
+            <!-- {{ page.date | date: "%Y" }} -->
+          </span>
+          All rights reserved
+        </p>
       </div>
     </div>
   </div>
