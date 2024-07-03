@@ -17,9 +17,9 @@ order: 0
         <source src="/assets/videos/hero.mp4" type="video/mp4">
       </video>
     {% comment %} <img
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            id="hero-video"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            src="/assets/images/lavish-estates-exterior-01.jpg"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        alt=""> {% endcomment %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          id="hero-video"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          src="/assets/images/lavish-estates-exterior-01.jpg"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            alt=""> {% endcomment %}
     </div>
   {% comment %}
     <div id="hero" class=""></div>
@@ -35,11 +35,11 @@ order: 0
     </span>
   </a>
   <section id="landing" class="container-fluid py-5 m-0">
-    <div class="row">
-      <div id="hero-target" class="col-lg-10 col-12 p-0 lead-card"></div>
-    </div>
-    <div id="em" class="row pt-5">
-      <div class="col-lg-10 col-12 d-flex flex-column align-items-end my-5">
+    {% comment %} <div class="row">
+                                                                                                                                                                                                            <div id="hero-target" class="col-lg-10 col-12 p-0 lead-card"></div>
+                                                                                                                                        </div> {% endcomment %}
+    <div id="em" class="row pt-5 mt-5">
+      <div class="col-lg-8 px-3 col-12 d-flex flex-column align-items-end my-5 order-1 order-lg-0">
         <h1 class="reveal-500 fw-bold text-primary" style="font-size: 96px">Elite Manor</h1>
         {% comment %} <div class="position-relative"> {% endcomment %}
         {% comment %} <div class=""> {% endcomment %}
@@ -61,48 +61,51 @@ order: 0
         </h1>
         {% comment %} </div> {% endcomment %}
         {% comment %} </div> {% endcomment %}
-        <p class="mt-4 mb-2 fs-lg-5">
-          register now to receive latest special privileges & exclusive project                                                                                                                                                                                                                           
+        <p class="mt-4 mb-2 fs-lg-5 text-end">
+          register now to receive latest special privileges & exclusive project                                                                                                                                                                                                                                                                
           information
         </p>
         <a class="btn btn-primary text-light p-3 fw-bold rounded-0 my-4 genie" href="{% link _pages/register.html %}">Register Now
           <i class="fa fa-chevron-right"></i>
         </a>
       </div>
-      <div class="col-lg-10 offset-lg-2 col-12 p-0 me-5 lead-card" style="
-          background: url('/assets/images/slideshow-03.jpg') center no-repeat;
-          background-size: cover;
-        ">
-</div>
-      <div class="reveal col-lg-6 offset-lg-2 col-12 d-flex flex-column align-items-start my-5">
-        <h3 class="">
-          To redefine innovative living through luxury, comfort, and pristine                                                                                                                                                                                                                           
-          quality residences
-        </h3>
-        <p class="mt-2">
-          Elite Manor is a real estate development firm that tailors to                                                                                                                                                                                                                           
-          international clients who seek luxury and high-end housing in
-          Thailand. Headquartered in Phuket, Thailand and focused on a target
-          market of families, foreigners, and investors. We pride ourselves in
-          our high quality builds and modern smart-home designs.
-        </p>
+      <div class="col-lg-4 py-lg-5 ps-lg-5 pe-lg-0 col-12 px-0 order-0 order-lg-1">
+        <div id="hero-target" class="lead-card h-100 w-100"></div>
       </div>
-      <div class="col-lg-10 col-12 p-0 me-5 lead-card" style="
-          background: url('/assets/images/slideshow-05.jpg') center no-repeat;
-          background-size: cover;
-        ">
+    </div>
+    <div class="col-lg-10 offset-lg-2 col-12 p-0 me-5 lead-card" style="
+    background: url('/assets/images/slideshow-03.jpg') center no-repeat;
+    background-size: cover;
+  ">
 </div>
-      <div class="reveal col-lg-6 offset-lg-4 col-12 d-flex flex-column align-items-end my-5">
-        <p class="">
-          We tailor to international clients who seek luxury and high-end                                                                                                                                                                                                                           
-          housing in Thailand. Headquartered in Phuket, Thailand and focused on
-          a target market of families, foreigners, and investors. We pride
-          ourselves in our high quality builds and modern smart-home designs.
-        </p>
-        <a class="btn btn-primary text-light p-3 fw-bold rounded-0 genie" href="{% link _pages/about.md %}">Learn More
-          <i class="fa fa-chevron-right"></i>
-        </a>
-      </div>
+    <div class="reveal col-lg-6 offset-lg-2 col-12 d-flex flex-column align-items-start my-5">
+      <h3 class="">
+        To redefine innovative living through luxury, comfort, and pristine                                                                                                                                                                                                                                                             
+    quality residences
+      </h3>
+      <p class="mt-2">
+        Elite Manor is a real estate development firm that tailors to                                                                                                                                                                                                                                                             
+    international clients who seek luxury and high-end housing in
+    Thailand. Headquartered in Phuket, Thailand and focused on a target
+    market of families, foreigners, and investors. We pride ourselves in
+    our high quality builds and modern smart-home designs.
+      </p>
+    </div>
+    <div class="col-lg-10 col-12 p-0 me-5 lead-card" style="
+    background: url('/assets/images/slideshow-05.jpg') center no-repeat;
+    background-size: cover;
+  ">
+</div>
+    <div class="reveal col-lg-6 offset-lg-4 col-12 d-flex flex-column align-items-end my-5">
+      <p class="">
+        We tailor to international clients who seek luxury and high-end                                                                                                                                                                                                                                                             
+    housing in Thailand. Headquartered in Phuket, Thailand and focused on
+    a target market of families, foreigners, and investors. We pride
+    ourselves in our high quality builds and modern smart-home designs.
+      </p>
+      <a class="btn btn-primary text-light p-3 fw-bold rounded-0 genie" href="{% link _pages/about.md %}">Learn More
+        <i class="fa fa-chevron-right"></i>
+      </a>
     </div>
   </section>
   <section id="projects" class="container-fluid">
@@ -134,7 +137,7 @@ order: 0
       <div class="reveal col-lg-5 col-12 mb-5 mb-lg-0 p-4 px-lg-5 mt-lg-auto">
         <h3>Lavish Estates</h3>
         <p>
-          The harmony of innovative living through luxury, comfort, and pristine                                                                                                                                                                                                                           
+          The harmony of innovative living through luxury, comfort, and pristine                                                                                                                                                                                                                                                                
           quality residences in Phuket
         </p>
         <a href="{% link _projects/lavish-estates.md %}" class="btn btn-secondary p-3 fw-bold rounded-0 genie">
@@ -161,7 +164,7 @@ order: 0
       <div class="reveal col-lg-5 col-12 mb-5 mb-lg-0 p-4 px-lg-5 mt-lg-auto">
         <h4>Cornwell</h4>
         <p>
-          The harmony of innovative living through luxury, comfort, and pristine                                                                                                                                                                                                                           
+          The harmony of innovative living through luxury, comfort, and pristine                                                                                                                                                                                                                                                                
           quality residences in Phuket
         </p>
         <a
