@@ -22,3 +22,13 @@ html {
 // body * {
 //   background-color: #fff;
 // }
+
+.bg-dark {
+  background-image: url('/assets/images/pattern-01.jpg');
+  background-blend-mode: overlay;
+}
+
+// section.container-fluid:not(.bg-dark) {
+//   background-image: url('/assets/images/pattern-01.jpg');
+//   background-color: white;
+// }
