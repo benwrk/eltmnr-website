@@ -63,7 +63,7 @@ $navbar-background-color: rgba(255, 255, 255, 0.7);
 $brand-image-height: 50px;
 
 .brand-image {
-  transition-property: height filter;
+  transition-property: all !important;
   transition-duration: $default-transform-duration;
   height: $brand-image-height;
 }
