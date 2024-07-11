@@ -128,8 +128,8 @@ Lavish Estates is also worth investing as a holiday home in Phuket. If you are i
 Lavish Estates is located in a prime area of Chalong sitting in the southern portion of the Phuket Province. Chalong is an urban-commercial bay area that is surrounded by restaurants, seafood, mountain, activities, and beaches.
 
 <div class="d-flex align-items-start">
-  <img src="/assets/images/lavish-estates-location-map.png" alt="">
-  <img src="/assets/images/lavish-estates-distances.png" alt="">
+  <img class="w-50" src="/assets/images/lavish-estates-location-map.png" alt="">
+  <img class="w-50" src="/assets/images/lavish-estates-distances.png" alt="">
 </div>
 
 
