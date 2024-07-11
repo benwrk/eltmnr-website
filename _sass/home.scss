@@ -110,6 +110,8 @@
 .clock {
 	min-height: 18em;
 	min-width: 18em;
+  margin-left: -1em;
+  margin-right: -1em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -175,7 +177,7 @@
 	content: "";
 	height: 60%;
 	width: 2px;
-	background-color: #f00;
+	background-color: var(--bs-primary);
 	border-radius: 2px;
 }
 
