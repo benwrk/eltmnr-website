@@ -443,7 +443,7 @@ switchModeBtn.addEventListener("click", switchTheme, false);
 
   setInterval(animateHero, 1000 / 60);
 
-  $(document).ready(animateHero);
+  $(document).ready(setTimeout(function() {scrolling = true; animateHero();}, 300));
   // $(document).scroll(animateHero);
   // $(document).scroll()
   // $(window).scroll(heroScroll);
