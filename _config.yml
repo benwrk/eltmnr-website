@@ -74,3 +74,4 @@ exclude:
   - Gemfile.lock
   - Gemfile.development
   - Gemfile.development.lock
+  - node_modules
