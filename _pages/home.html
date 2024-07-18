@@ -234,59 +234,30 @@ endcomment %}
         <h1 class="fw-bold text-uppercase text-primary text-center mb-5">
           FAQs
         </h1>
+        {% for i in (0..9) %}
         <p>
+          <a
+            class="text-dark"
+            data-bs-toggle="collapse"
+            href="#collapse-{{ forloop.index0 }}"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapse-{{ forloop.index0 }}"
+            title="View answer"
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
+            ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis
+            itaque nisi pariatur nulla. {{ forloop.index0 }}
+          </a>
+        </p>
+        <div class="collapse text-secondary" id="collapse-{{ forloop.index0 }}">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
           ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis
-          itaque nisi pariatur nulla.
-        </p>
+          itaque nisi pariatur nulla. {{ forloop.index0 }}
+        </div>
+        {% unless forloop.last %}
         <hr />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-          ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis
-          itaque nisi pariatur nulla.
-        </p>
-        <hr />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-          ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis
-          itaque nisi pariatur nulla.
-        </p>
-        <hr />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-          ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis
-          itaque nisi pariatur nulla.
-        </p>
-        <hr />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-          ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis
-          itaque nisi pariatur nulla.
-        </p>
-        <hr />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-          ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis
-          itaque nisi pariatur nulla.
-        </p>
-        <hr />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-          ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis
-          itaque nisi pariatur nulla.
-        </p>
-        <hr />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-          ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis
-          itaque nisi pariatur nulla.
-        </p>
-        <hr />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-          ab odio, ipsam libero, tenetur beatae, consequatur vel ipsa debitis
-          itaque nisi pariatur nulla.
-        </p>
+        {% endunless %} {% endfor %}
       </div>
       <div class="reveal col-12 col-lg-6 pt-5">
         <h1 class="fw-bold text-uppercase text-primary text-center">Awards</h1>
