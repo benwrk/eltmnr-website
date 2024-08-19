@@ -45,7 +45,7 @@
           <li class="nav-item{% if page.url == page_.url %} active{% endif %}{% unless page_.navbar_display %} d-none disabled{% endunless %}">
             <a class="pt-0 mb-0 nav-link fw-medium origin-left genie-lg" href="{{ page_.url }}">
               <!-- <i class="fa fa-location-dot"></i> -->
-              {{ page_.title }}
+              <span class="notranslate">{{ page_.title }}</span>
               {% if page.url == page_.url %}
                 <span class="sr-only">(current)</span>
               {% endif %}
@@ -65,7 +65,7 @@
             </a>
           </li>
         {% endfor %}
-        <div class="bg-white mt-4 mb-3 ps-3 p-2" id="gt-mordadam-43217984"></div>
+        <div class="mt-4 mb-3 py-2 fw-medium" id="gt-mordadam-43217984"></div>
       </ul>
     </div>
   </div>

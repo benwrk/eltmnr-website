@@ -17,8 +17,8 @@ $navbar-background-color: rgba(255, 255, 255, 0.7);
 .navbar {
   transition: background-color;
   transition-duration: $default-transform-duration;
-  min-height: 100px;
-  
+  min-height: 90px;
+
   &:not(.navbar-at-top) {
     background-color: $navbar-background-color;
     // background: rgba(245, 245, 220, 0.6);
@@ -45,8 +45,23 @@ $navbar-background-color: rgba(255, 255, 255, 0.7);
   }
 }
 
+.glink {
+  color: #000000A6 !important;
+  img {
+    margin-right: 5px !important;
+  }
+}
+
+.gt_languages {
+  flex-flow: column !important;
+  max-height: none !important;
+}
+
+.gt_white_content {
+  height: fit-content !important;
+}
+
 .navbar a {
-  // color: #ffffffee !important;
   padding-bottom: 0;
   margin-bottom: 10px;
 }
@@ -60,7 +75,7 @@ $navbar-background-color: rgba(255, 255, 255, 0.7);
   transition-duration: $default-transform-duration;
 }
 
-$brand-image-height: 50px;
+$brand-image-height: 45px;
 
 .brand-image {
   transition-property: all !important;
@@ -86,6 +101,7 @@ $brand-image-height: 50px;
   border: none;
   &:focus {
     outline: none;
+    box-shadow: none;
   }
   &[aria-expanded="true"] {
     .icon-bar {

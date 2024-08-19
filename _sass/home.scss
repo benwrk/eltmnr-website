@@ -145,6 +145,7 @@
 	display: flex;
 	justify-content: center;
 	border-radius: 50%;
+	// transition: all ease 0.5s;
 }
 .hour {
 	height: 10em;
@@ -176,9 +177,9 @@
 .sec:before {
 	content: "";
 	height: 60%;
-	width: 2px;
+	width: 4px;
 	background-color: var(--bs-primary);
-	border-radius: 2px;
+	border-radius: 4px;
 }
 
 /* Style for theme switch btn */
