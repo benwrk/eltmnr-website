@@ -6,36 +6,58 @@ layout: default
   <img class="w-100" src="{{ page.hero_image | relative_url }}" alt="" />
 </div>
 <section class="container my-5">
-    <div class="row">
-        <article class="col-12 main-content">
-            <p class="lead"><img src="{{ page.logo }}"></p>
-            <p class="lead">{{ content }}</p>
-        </article>
-        <div class="col-12 mt-5">
-            <h1>Gallery</h1>
-            <h2 class="mt-5">Interior</h2>
-            <div class="w-100 d-flex flex-row flex-wrap">
-                {% for image in page.interior_images %}
-                <img loading="lazy" class="m-3 shadow-lg" src="{{ image }}" alt="" height="300px" width="400px" style="object-fit: cover;">
-                {% endfor %}
+  <div class="row">
+    <article class="col-12 main-content d-flex flex-column align-items-start">
+      <img class="mb-2" src="{{ page.logo }}" />
+      <h1 class="mb-3">{{ page.tagline }}</h1>
+      <div class="main-content">{{ content }}</div>
+    </article>
+    <div class="col-12 mt-5">
+      <h1 class="text-primary">Gallery</h1>
+      <ul class="nav nav-pills" id="pills-tab" role="tablist">
+        {% for album in page.albums %}
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-0 fw-bold{% if forloop.first %} active{% endif %}"
+            id="pills-{{ album.name | downcase }}-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-{{ album.name | downcase }}"
+            type="button"
+            role="tab"
+            aria-controls="pills-{{ album.name | downcase }}"
+            aria-selected="true"
+          >
+            {{ album.name }}
+          </button>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="tab-content bg-dark" id="pills-tabContent">
+        {% for album in page.albums %}
+        <div
+          class="tab-pane fade{% if forloop.first %} show active{% endif %}"
+          id="pills-{{ album.name | downcase}}"
+          role="tabpanel"
+          aria-labelledby="pills-{{ album.name | downcase}}-tab"
+          tabindex="0"
+        >
+          <div class="container bg-dark px-4">
+            <div class="row py-2">
+              {% for image in album.images limit: 6 %}
+              <img
+                loading="lazy"
+                class="col-12 col-lg-4 my-2 px-2"
+                src="{{ image }}"
+                alt=""
+                height="300px"
+                style="object-fit: cover"
+              />
+              {% endfor %}
             </div>
-
-            <h2 class="mt-5">Exterior</h2>
-            <div class="w-100 d-flex flex-row flex-wrap">
-                {% for image in page.exterior_images %}
-                <img loading="lazy" class="m-3 shadow-lg" src="{{ image }}" alt="" height="300px" width="400px" style="object-fit: cover;">
-                {% endfor %}
-            </div>
-
-            <h2 class="mt-5">Progress</h2>
-            {% for progress in page.progress %}
-            DATE PICKER: {{ progress.date }}
-            <div class="w-100 d-flex flex-row flex-wrap">
-                {% for image in progress.images %}
-                <img loading="lazy" class="m-3 shadow-lg" src="{{ image }}" alt="" height="300px" width="400px" style="object-fit: cover;">
-                {% endfor %}
-            </div>
-            {% endfor %}
+          </div>
         </div>
+        {% endfor %}
+      </div>
     </div>
+  </div>
 </section>

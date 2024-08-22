@@ -8,9 +8,10 @@
 @import "bootstrap/functions";
 
 // 2. Include any default variable overrides here
-$primary: #DEA58A;
-$secondary: rgb(65, 40, 6);
-$secondary-bg-subtle: rgb(99, 68, 24);
+$primary: #ab6b50;
+$secondary: #89837c;
+$tertiary: #e1ded8;
+$secondary-bg-subtle: $tertiary;
 $dark: #191919;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)

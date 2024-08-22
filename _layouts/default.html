@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     {% include meta-tags.html %} {% include favicon.html %}
@@ -29,11 +29,27 @@
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
+    <div
+      id="cover"
+      style="
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        /* padding-left: 50%; */
+        padding-top: 30%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background: #000;
+        z-index: 9999;
+        transition: all 0.5s ease-in-out;
+        color: #FFFFFF50;
+      "
+    >One moment...</div>
     <div class="container-fluid p-0 page-container">
       {% include navbar.html %}
       <!-- <div class="container-fluid p-0 page-inner-container"> -->
-      {% include navbar-spacer.html color="var(--bs-dark)" %}
-      {{ content }}
+      {% include navbar-spacer.html color="var(--bs-dark)" %} {{ content }}
       <!-- </div> -->
       {% include footer.html %}
     </div>
@@ -58,6 +74,13 @@
         distance: "200px",
         opacity: -0.5,
         easing: "ease-in-out",
+      });
+    </script>
+    <script>
+      $(window).on("load", function () {
+        // $("#cover").css('visibility', 'hidden');
+        $("#cover").css('display', 'none');
+        $(window).scroll();
       });
     </script>
     <!-- <div class="m-5" id="google_translate_element"></div>

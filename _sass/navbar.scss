@@ -1,27 +1,13 @@
-// .navbar-spacer {
-//   min-height: 100px;
-//   width: 100%;
-//   background-color: #111111;
-// }
-
-// .navbar-margin {
-//   margin-top: 100px;
-// }
-
-// .navbar-toggler {
-//   border: none;
-// }
-
 $navbar-background-color: rgba(255, 255, 255, 0.7);
+$navbar-min-height: 90px;
 
 .navbar {
   transition: background-color;
   transition-duration: $default-transform-duration;
-  min-height: 90px;
+  min-height: $navbar-min-height;
 
   &:not(.navbar-at-top) {
     background-color: $navbar-background-color;
-    // background: rgba(245, 245, 220, 0.6);
   }
 
   &.navbar-at-top {
@@ -46,7 +32,7 @@ $navbar-background-color: rgba(255, 255, 255, 0.7);
 }
 
 .glink {
-  color: #000000A6 !important;
+  color: #000000a6 !important;
   img {
     margin-right: 5px !important;
   }

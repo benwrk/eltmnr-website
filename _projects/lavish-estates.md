@@ -2,28 +2,29 @@
 name: Lavish Estates
 logo: /assets/images/lavish-estates-logo-light.png
 hero_image: /assets/images/slideshow-01.jpg
+# master_plan_image: /assets/images/lavish-estates-master-plan.jpg
 tagline: >-
   “The harmony of innovative living through luxury, comfort, and pristine quality residences in Phuket”
 short_description: >-
   Lavish Estates, Elite Manor’s pride and first luxury real estate development project in Phuket. Emphasizing on innovative and functional designs to deliver to the sole interest of client needs. Understandably, perfect for residences and worthy of investment.
-interior_images:
-  - /assets/images/lavish-estates-interior-01.jpg
-  - /assets/images/lavish-estates-interior-02.jpg
-  - /assets/images/lavish-estates-interior-03.jpg
-  - /assets/images/lavish-estates-interior-04.jpg
-  - /assets/images/lavish-estates-interior-05.jpg
-  - /assets/images/lavish-estates-interior-06.jpg
-  - /assets/images/lavish-estates-interior-07.jpg
-  - /assets/images/lavish-estates-interior-08.jpg
-exterior_images:
-  - /assets/images/lavish-estates-exterior-01.jpg
-  - /assets/images/lavish-estates-exterior-02.jpg
-  - /assets/images/lavish-estates-exterior-03.jpg
-  - /assets/images/lavish-estates-exterior-04.jpg
-  - /assets/images/lavish-estates-exterior-05.jpg
-  - /assets/images/lavish-estates-exterior-06.jpg
-progress:
-  - date: 2023-09
+albums:
+  - name: Interior
+    images:
+      - /assets/images/lavish-estates-interior-01.jpg
+      - /assets/images/lavish-estates-interior-02.jpg
+      - /assets/images/lavish-estates-interior-03.jpg
+      - /assets/images/lavish-estates-interior-04.jpg
+      - /assets/images/lavish-estates-interior-05.jpg
+      - /assets/images/lavish-estates-interior-06.jpg
+  - name: Exterior
+    images:
+      - /assets/images/lavish-estates-exterior-01.jpg
+      - /assets/images/lavish-estates-exterior-02.jpg
+      - /assets/images/lavish-estates-exterior-03.jpg
+      - /assets/images/lavish-estates-exterior-04.jpg
+      - /assets/images/lavish-estates-exterior-05.jpg
+      - /assets/images/lavish-estates-exterior-06.jpg
+  - name: Progress
     images:
       - /assets/images/lavish-estates-progress-01.jpg
       - /assets/images/lavish-estates-progress-02.jpg
@@ -41,14 +42,7 @@ progress:
       - /assets/images/lavish-estates-progress-14.jpg
       - /assets/images/lavish-estates-progress-15.jpg
       - /assets/images/lavish-estates-progress-16.jpg
-  - date: 2024-03-04
-    images:
-      - /assets/images/slideshow-01.jpg
-      - /assets/images/slideshow-02.jpg
-      - /assets/images/slideshow-03.jpg
 ---
-
-### “To redefine innovative living through luxury, comfort, and pristine quality residences”
 
 Lavish Estates, Elite Manor’s pride and first luxury real estate development project in Phuket. Emphasizing on innovative and functional designs to deliver to the sole interest of client needs. Understandably, perfect for residences and worthy of investment.
 
@@ -57,10 +51,72 @@ Lavish Estates comes with 13 two-story luxury pool villas with functional design
 Lavish Estates is also worth investing as a holiday home in Phuket. If you are interested in owning a property or investing, our team of experts are prompt and willing to assist you.
 
 # Master Plan
-*Land Size: 13,426 SQ.M.*
-![](/assets/images/master-plan.jpg)
 
-<div class="row my-4 py-4">
+_Land Size: 13,426 SQ.M._
+
+<p class="text-center">
+  <img src="/assets/images/lavish-estates-master-plan.jpg">
+</p>
+
+<div class="row mx-md-5">
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L01</h6><div class="d-inline-block" style="width: 80px;">Serenity 01</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L02</h6><div class="d-inline-block" style="width: 80px;">Tranquil 01</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L03</h6><div class="d-inline-block" style="width: 80px;">Serenity 02</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L04</h6><div class="d-inline-block" style="width: 80px;">Tranquil 02</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L05</h6><div class="d-inline-block" style="width: 80px;">Extrava 02</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L06</h6><div class="d-inline-block" style="width: 80px;">Extrava 03</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L07</h6><div class="d-inline-block" style="width: 80px;">Tranquil 03</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L08</h6><div class="d-inline-block" style="width: 80px;">Tranquil 04</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L09</h6><div class="d-inline-block" style="width: 80px;">Tranquil 05</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L10</h6><div class="d-inline-block" style="width: 80px;">Tranquil 06</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L11</h6><div class="d-inline-block" style="width: 80px;">Serenity 03</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L12</h6><div class="d-inline-block" style="width: 80px;">Tranquil 07</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L13</h6><div class="d-inline-block" style="width: 80px;">Extrava 01</div></div>
+</div>
+
+<!-- <div class="master-plan-legend row">
+  <div class="col-12 col-lg">
+    <div class="legend">L01</div><div class="legend-description">Serenity 01</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L02</div><div class="legend-description">Tranquil 01</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L03</div><div class="legend-description">Serenity 02</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L04</div><div class="legend-description">Tranquil 02</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L05</div><div class="legend-description">Extrava 02</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L06</div><div class="legend-description">Extrava 03</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L07</div><div class="legend-description">Tranquil 03</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L08</div><div class="legend-description">Tranquil 04</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L09</div><div class="legend-description">Tranquil 05</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L10</div><div class="legend-description">Tranquil 06</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L11</div><div class="legend-description">Serenity 03</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L12</div><div class="legend-description">Tranquil 07</div>
+  </div>
+  <div class="col-12 col-lg">
+    <div class="legend">L13</div><div class="legend-description">Extrava 01</div>
+  </div>
+</div> -->
+
+<!-- <div class="row my-4 py-4">
   <div class="col-4 ps-5">
   <ul class="list-unstyled">
     <li><span class="fw-bold">L01</span> Serenity 01</li>
@@ -86,50 +142,83 @@ Lavish Estates is also worth investing as a holiday home in Phuket. If you are i
     <li><span class="fw-bold">L13</span> Extrava 01</li>
   </ul>
   </div>
-</div>
+</div> -->
 
 # Villa Types
+
 ## Tranquil Type
-<div class="d-flex align-items-start">
-  <div class="d-flex flex-column w-50 text-center">
-    <img src="/assets/images/tranquil-floorplan-01.gif" alt="" class="p-4">
-    <p class="lead fw-bold">1<sup>st</sup> floor plan</p>
-    <img src="/assets/images/tranquil-floorplan-02.gif" alt="" class="p-4">
-    <p class="lead fw-bold">2<sup>nd</sup> floor plan</p>
-  </div>
-  <img src="/assets/images/tranquil-features.png" alt="" class="w-50 p-5">
-</div>
+
+<p class="text-center mb-5">
+  <img src="/assets/images/tranquil-features.png"><br>
+  Tranquil features
+</p>
+
+<p class="text-center mb-5">
+  <img src="/assets/images/tranquil-floorplan-01.gif"><br>
+  1<sup>st</sup> floor plan
+</p>
+
+<p class="text-center">
+  <img src="/assets/images/tranquil-floorplan-02.gif"><br>
+  2<sup>nd</sup> floor plan
+</p>
+
+<!-- <div class="row mx-md-5">
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-bed"></i> Bedrooms</div><div class="d-inline-block" style="width: 80px;">3</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-bath"></i> Bathrooms</div><div class="d-inline-block" style="width: 80px;">4</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-expand"></i> Plot size</div><div class="d-inline-block" style="width: 80px;">592.20 wa<sup>2</sup></div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-expand"></i> Total area</div><div class="d-inline-block" style="width: 80px;">666.84 m<sup>2</sup></div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-water"></i> Pool size</div><div class="d-inline-block" style="width: 80px;">3.85 x 13.85 m</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-house"></i> Built area</div><div class="d-inline-block" style="width: 80px;">571.45 m<sup>2</sup></div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-information"></i> Bedrooms</div><div class="d-inline-block" style="width: 80px;">Tranquil 03</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-information"></i> Bedrooms</div><div class="d-inline-block" style="width: 80px;">Tranquil 04</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-information"></i> Bedrooms</div><div class="d-inline-block" style="width: 80px;">Tranquil 05</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-information"></i> Bedrooms</div><div class="d-inline-block" style="width: 80px;">Tranquil 06</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-information"></i> Bedrooms</div><div class="d-inline-block" style="width: 80px;">Serenity 03</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-information"></i> Bedrooms</div><div class="d-inline-block" style="width: 80px;">Tranquil 07</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><div class="text-primary me-2 d-inline" style="width: 80px;"><i class="fa fa-information"></i> Bedrooms</div><div class="d-inline-block" style="width: 80px;">Extrava 01</div></div>
+</div> -->
 
 ## Serenity Type
-<div class="d-flex align-items-start">
-  <div class="d-flex flex-column w-50 text-center">
-    <img src="/assets/images/serenity-floorplan-01.gif" alt="" class="p-4">
-    <p class="lead fw-bold">1<sup>st</sup> floor plan</p>
-    <img src="/assets/images/serenity-floorplan-02.gif" alt="" class="p-4">
-    <p class="lead fw-bold">2<sup>nd</sup> floor plan</p>
-  </div>
-  <img src="/assets/images/serenity-features.png" alt="" class="w-50 p-5">
-</div>
+
+<p class="text-center mb-5">
+  <img src="/assets/images/serenity-features.png"><br>
+  Serenity features
+</p>
+
+<p class="text-center mb-5">
+  <img src="/assets/images/serenity-floorplan-01.gif"><br>
+  1<sup>st</sup> floor plan
+</p>
+
+<p class="text-center">
+  <img src="/assets/images/serenity-floorplan-02.gif"><br>
+  2<sup>nd</sup> floor plan
+</p>
 
 ## Extrava Type
-<div class="d-flex align-items-start">
-  <div class="d-flex flex-column w-50 text-center">
-    <img src="/assets/images/extrava-floorplan-01.gif" alt="" class="p-4">
-    <p class="lead fw-bold">1<sup>st</sup> floor plan</p>
-    <img src="/assets/images/extrava-floorplan-02.gif" alt="" class="p-4">
-    <p class="lead fw-bold">2<sup>nd</sup> floor plan</p>
-  </div>
-  <img src="/assets/images/extrava-features.png" alt="" class="w-50 p-5">
-</div>
+
+<p class="text-center mb-5">
+  <img src="/assets/images/extrava-features.png"><br>
+  Extrava features
+</p>
+
+<p class="text-center mb-5">
+  <img src="/assets/images/extrava-floorplan-01.gif"><br>
+  1<sup>st</sup> floor plan
+</p>
+
+<p class="text-center">
+  <img src="/assets/images/extrava-floorplan-02.gif"><br>
+  2<sup>nd</sup> floor plan
+</p>
 
 # Location
-<i class="fa fa-location-dot"></i> **Chalong, Phuket, Thailand**
+
+<p class="text-center"><img src="/assets/images/lavish-estates-location-map.png" alt=""><br>
+<h6 class="text-primary text-center"><i class="fa fa-location-dot"></i> Chalong, Phuket, Thailand</h6>
+</p>
 
 Lavish Estates is located in a prime area of Chalong sitting in the southern portion of the Phuket Province. Chalong is an urban-commercial bay area that is surrounded by restaurants, seafood, mountain, activities, and beaches.
 
-<div class="d-flex align-items-start">
-  <img class="w-50" src="/assets/images/lavish-estates-location-map.png" alt="">
-  <img class="w-50" src="/assets/images/lavish-estates-distances.png" alt="">
-</div>
-
-
+<p class="text-center"><img src="/assets/images/lavish-estates-distances.png" alt=""><br>Nearby points of interest</p>

@@ -4,19 +4,51 @@ order: 5
 ---
 
 <div class="container-fluid p-0">
-  <img
+  <!-- <img
     src="{{ '/assets/images/parallax-02.png' | relative_url }}"
     class="w-100"
     alt=""
     style="object-fit: cover"
-  />
+  /> -->
 </div>
 <div class="container py-5">
   <div class="row">
     <div class="col-12">
-      <h1>Contact Us</h1>
+      <h1 class="text-primary">Contact Us</h1>
+      <form>
+        <div id="emailHelp" class="form-text mb-3">
+          We'll never share your information with anyone else.
+        </div>
+        <div class="mb-3">
+          <label for="subjectInput" class="form-label text-primary">Subject</label>
+          <input
+            type="text"
+            class="form-control rounded-0"
+            id="subjectInput"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="messageInput" class="form-label text-primary">Message</label>
+          <input type="text" class="form-control rounded-0" id="messageInput" />
+        </div>
+        <!-- <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <div id="submitHelp" class="form-text mb-3">
+          By clicking this button, your email client should automatically launch, and ready to send an email to us with your subject and message. Please use the send button in your email client to finish sending us your message. In the case that your email client did not automatically launch, you can manually send your message to <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        <button
+          type="button"
+          onclick="sendEmail()"
+          class="btn btn-primary text-white fw-bold rounded-0"
+        >
+          Submit <i class="fa fa-chevron-right"></i>
+        </button>
+      </form>
     </div>
-    <div class="col-4 mt-4 mb-auto">
+    <!-- <div class="col-4 mt-4 mb-auto">
       <div class="shadow-lg pt-4">
         <h5 class="fw-bold mx-4">Elite Manor Co., Ltd.</h5>
         <p class="mx-4 mb-4 fw-medium"><i class="fa fa-location-dot fs-5"></i> 5/203 Moo 4, Cherngtalay,<br />Thalang, Phuket 83110</p>
@@ -71,6 +103,15 @@ order: 5
         style="filter: sepia(0.25)"
         >Loading…</iframe
       >
-    </div>
+    </div> -->
+    <script type="text/javascript">
+      function sendEmail() {
+        var subject = document.getElementById("subjectInput").value;
+        var message = document.getElementById("messageInput").value;
+        var target = `mailto:${encodeURIComponent("{{ site.email }}")}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+        console.log(target);
+        window.location = target;
+      }
+    </script>
   </div>
 </div>
