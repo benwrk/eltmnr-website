@@ -1,12 +1,11 @@
 ---
-title: About
+title: About Elite Manor
 order: 9
 layout: blogs
 hero_image: /assets/images/slideshow-01.jpg
 ---
-## **Elite Manor**
 
-<p class="blockquote">"To redefine innovative living through luxury, comfort, and pristine quality residences”</p>
+<h3>"To redefine innovative living through luxury, comfort, and pristine quality residences”</h3>
 
 Elite Manor is a real estate development firm that tailors to international clients who seek luxury and high-end housing in Thailand. Headquartered in Phuket, Thailand and focused on a target market of families, foreigners, and investors. We pride ourselves on our high quality builds and modern smart-home designs.
 

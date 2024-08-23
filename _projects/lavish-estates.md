@@ -1,6 +1,6 @@
 ---
 name: Lavish Estates
-logo: /assets/images/lavish-estates-logo-light.png
+logo: /assets/images/logo-lavish-estates-dark.svg
 hero_image: /assets/images/slideshow-01.jpg
 # master_plan_image: /assets/images/lavish-estates-master-plan.jpg
 tagline: >-
