@@ -257,28 +257,34 @@ endcomment %}
       <div class="reveal col-12 p-5" style="background-color: #ded8cd">
         <h1 class="fw-bold text-primary text-center mb-5">FAQs</h1>
         {% for faq in site.data.faqs %}
-        <p class="text-center">
-          <a
-            class="text-dark fw-medium"
-            data-bs-toggle="collapse"
-            href="#collapse-{{ forloop.index0 }}"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapse-{{ forloop.index0 }}"
-            title="View answer"
+        <div class="row">
+          <div class="col-12 col-lg-4 offset-lg-4 mb-2">
+            {% unless forloop.first %}
+            <hr class="w-100 mb-4" />
+            {% endunless %}
+            <a
+              class="text-dark fw-medium"
+              data-bs-toggle="collapse"
+              href="#collapse-{{ forloop.index0 }}"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapse-{{ forloop.index0 }}"
+              title="View answer"
+            >
+              <div class="d-flex align-items-center">
+                <span class="me-auto">{{ faq.question }}</span>
+                <img src="/assets/images/logo-lavish-estates-le-black.svg" alt="expand" style="height: 24px;">
+              </div>
+            </a>
+          </div>
+          <div
+            class="collapse text-secondary text-left col-12 col-lg-4 offset-lg-4"
+            id="collapse-{{ forloop.index0 }}"
           >
-            {{ faq.question }}
-          </a>
-        </p>
-        <div
-          class="row collapse text-secondary text-center"
-          id="collapse-{{ forloop.index0 }}"
-        >
-          <div class="col-lg-4 offset-lg-4 col-12">{{ faq.answer }}</div>
+            {{ faq.answer }}
+          </div>
         </div>
-        {% unless forloop.last %}
-        <hr class="w-25 mx-auto" />
-        {% endunless %} {% endfor %}
+        {% endfor %}
       </div>
       <!-- <div class="reveal col-12 col-lg-12 pt-5">
         <h1 class="fw-bold text-primary text-center">Awards</h1>

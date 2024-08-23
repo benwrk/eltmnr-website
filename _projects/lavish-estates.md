@@ -52,26 +52,26 @@ Lavish Estates is also worth investing as a holiday home in Phuket. If you are i
 
 # Master Plan
 
-_Land Size: 13,426 SQ.M._
+**Land size:** 13,426 sq.m.
 
 <p class="text-center">
   <img src="/assets/images/lavish-estates-master-plan.jpg">
 </p>
 
 <div class="row mx-md-5">
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L01</h6><div class="d-inline-block" style="width: 80px;">Serenity 01</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L02</h6><div class="d-inline-block" style="width: 80px;">Tranquil 01</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L03</h6><div class="d-inline-block" style="width: 80px;">Serenity 02</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L04</h6><div class="d-inline-block" style="width: 80px;">Tranquil 02</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L05</h6><div class="d-inline-block" style="width: 80px;">Extrava 02</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L06</h6><div class="d-inline-block" style="width: 80px;">Extrava 03</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L07</h6><div class="d-inline-block" style="width: 80px;">Tranquil 03</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L08</h6><div class="d-inline-block" style="width: 80px;">Tranquil 04</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L09</h6><div class="d-inline-block" style="width: 80px;">Tranquil 05</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L10</h6><div class="d-inline-block" style="width: 80px;">Tranquil 06</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L11</h6><div class="d-inline-block" style="width: 80px;">Serenity 03</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L12</h6><div class="d-inline-block" style="width: 80px;">Tranquil 07</div></div>
-  <div class="col-6 col-sm-4 col-md-3 small text-center"><h6 class="text-primary me-2 d-inline"><i class="fa fa-location-dot"></i> L13</h6><div class="d-inline-block" style="width: 80px;">Extrava 01</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L01</span><div class="d-inline-block">Serenity 01</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L02</span><div class="d-inline-block">Tranquil 01</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L03</span><div class="d-inline-block">Serenity 02</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L04</span><div class="d-inline-block">Tranquil 02</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L05</span><div class="d-inline-block">Extrava 02</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L06</span><div class="d-inline-block">Extrava 03</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L07</span><div class="d-inline-block">Tranquil 03</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L08</span><div class="d-inline-block">Tranquil 04</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L09</span><div class="d-inline-block">Tranquil 05</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L10</span><div class="d-inline-block">Tranquil 06</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L11</span><div class="d-inline-block">Serenity 03</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L12</span><div class="d-inline-block">Tranquil 07</div></div>
+  <div class="col-6 col-sm-4 col-md-3 small text-center"><span class="text-primary me-2 d-inline fw-medium"><i class="fa fa-location-dot"></i> L13</span><div class="d-inline-block">Extrava 01</div></div>
 </div>
 
 <!-- <div class="master-plan-legend row">

@@ -1,5 +1,5 @@
 ---
-title: Estate Management
+title: Estate Management Service
 order: 7
 layout: blogs
 hero_image: /assets/images/parallax-04.jpg
@@ -11,7 +11,7 @@ At Elite Manor, we value your individual requirements. Our service-minded and pr
 
 Our full range of rental management services can take the hassle out of the rental experience, while assisting you to maximize your income potential, maintain and enhance its long-term value.
 
-<div class="row mb-5">
+<div class="row">
     <img class="col-12 col-lg-6 p-2" src="{{ '/assets/images/estate-management-01.jpg ' | relative_url }}" alt="">
     <img class="col-12 col-lg-6 p-2" src="{{ '/assets/images/estate-management-02.jpg ' | relative_url }}" alt="">
 </div>

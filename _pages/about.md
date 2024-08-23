@@ -2,7 +2,7 @@
 title: About Elite Manor
 order: 9
 layout: blogs
-hero_image: /assets/images/slideshow-01.jpg
+hero_image: /assets/images/parallax-03.jpg
 ---
 
 <h3>"To redefine innovative living through luxury, comfort, and pristine quality residences”</h3>
@@ -13,4 +13,4 @@ Elite Manor constructs properties that are high quality, luxurious, yet innovati
 
 With almost a decade of experience working in the Engineering and Real Estate industry in North America, the CEO and Founder have collaborated with an award-winning professional design team who have successfully designed projects such as Sri Panwa Private Residences, Ritz Carlton Residences Bangkok and The Residences at Mandarin Oriental Bangkok. This partnership ensures to deliver high quality, luxurious, yet innovative designs to estate owners worldwide.
 
-<img class="w-100 shadow-lg" src="{{ '/assets/images/parallax-03.jpg ' | relative_url }}" alt="">
+<!-- ![Elite Manor](/assets/images/parallax-03.jpg) -->
