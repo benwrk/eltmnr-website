@@ -33,7 +33,7 @@ order: 6
       />
     </div>
     <div class="col-12 col-lg-7 pt-4 p-lg-4 pb-lg-0 align-self-end">
-      <h3>{{ blog.title }}</h3>
+      <h2 class="text-primary">{{ blog.title }}</h2>
       <p>{{ blog.date | date: "%d/%m/%Y" }}</p>
       <p>{{ blog.content | markdownify | strip_html | truncatewords: 40 }}</p>
       <p class="text-end mb-1">

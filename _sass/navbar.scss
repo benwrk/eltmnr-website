@@ -50,10 +50,12 @@ $navbar-min-height: 90px;
 .navbar a {
   padding-bottom: 0;
   margin-bottom: 10px;
+  font-family: "Red Hat Display";
 }
 
 .nav-item.active .nav-link {
-  border-bottom-color: currentcolor;
+  color: $primary;
+  border-bottom-color: $primary;
 }
 
 .nav-underline .nav-link {
